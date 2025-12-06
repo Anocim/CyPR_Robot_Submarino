@@ -1,0 +1,298 @@
+[0.062s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_msgs
+[0.206s] -- The C compiler identification is GNU 11.4.0
+[0.359s] -- The CXX compiler identification is GNU 11.4.0
+[0.378s] -- Detecting C compiler ABI info
+[0.566s] -- Detecting C compiler ABI info - done
+[0.599s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.601s] -- Detecting C compile features
+[0.603s] -- Detecting C compile features - done
+[0.612s] -- Detecting CXX compiler ABI info
+[0.829s] -- Detecting CXX compiler ABI info - done
+[0.863s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.864s] -- Detecting CXX compile features
+[0.866s] -- Detecting CXX compile features - done
+[0.876s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.333s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.818s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.843s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.981s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.897s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.479s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.316s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.365s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.369s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.426s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.426s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.426s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.426s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.469s] -- Found PythonExtra: .so  
+[4.642s] -- Configuring done
+[4.732s] -- Generating done
+[4.781s] -- Build files have been written to: /home/alejandro/cpr/colcon_ws/build/orca_msgs
+[4.812s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_msgs
+[4.816s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_msgs -- -j8 -l8
+[5.014s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.038s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.103s] [  4%] Built target ament_cmake_python_copy_orca_msgs
+[6.102s] running egg_info
+[6.105s] creating orca_msgs.egg-info
+[6.107s] writing orca_msgs.egg-info/PKG-INFO
+[6.108s] writing dependency_links to orca_msgs.egg-info/dependency_links.txt
+[6.108s] writing top-level names to orca_msgs.egg-info/top_level.txt
+[6.112s] writing manifest file 'orca_msgs.egg-info/SOURCES.txt'
+[6.120s] reading manifest file 'orca_msgs.egg-info/SOURCES.txt'
+[6.122s] writing manifest file 'orca_msgs.egg-info/SOURCES.txt'
+[6.202s] [  4%] Built target ament_cmake_python_build_orca_msgs_egg
+[7.867s] [  4%] Built target orca_msgs__cpp
+[7.934s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.974s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.993s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.064s] [ 12%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_generator_c.dir/rosidl_generator_c/orca_msgs/action/detail/target_mode__functions.c.o[0m
+[8.064s] [ 14%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_generator_c.dir/rosidl_generator_c/orca_msgs/msg/detail/effort__functions.c.o[0m
+[8.070s] [ 17%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_generator_c.dir/rosidl_generator_c/orca_msgs/msg/detail/motion__functions.c.o[0m
+[9.418s] [ 19%] [32m[1mLinking C shared library liborca_msgs__rosidl_generator_c.so[0m
+[9.610s] [ 19%] Built target orca_msgs__rosidl_generator_c
+[9.658s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.661s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.679s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.733s] [ 27%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orca_msgs/msg/detail/motion__type_support.cpp.o[0m
+[11.747s] [ 29%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orca_msgs/msg/detail/effort__type_support.cpp.o[0m
+[11.797s] [ 31%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orca_msgs/action/detail/target_mode__type_support.cpp.o[0m
+[14.184s] [ 34%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orca_msgs/action/target_mode__type_support.cpp.o[0m
+[14.197s] [ 36%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orca_msgs/msg/effort__type_support.cpp.o[0m
+[14.653s] [ 38%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orca_msgs/action/detail/dds_fastrtps/target_mode__type_support.cpp.o[0m
+[14.800s] [ 40%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orca_msgs/action/target_mode__type_support.cpp.o[0m
+[15.492s] [ 42%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orca_msgs/msg/effort__type_support.cpp.o[0m
+[15.687s] [ 44%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/orca_msgs/msg/motion__type_support.cpp.o[0m
+[15.954s] [ 46%] [32m[1mLinking CXX shared library liborca_msgs__rosidl_typesupport_c.so[0m
+[16.153s] [ 48%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orca_msgs/msg/motion__type_support.cpp.o[0m
+[16.295s] [ 48%] Built target orca_msgs__rosidl_typesupport_c
+[16.295s] [ 51%] [32m[1mLinking CXX shared library liborca_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[16.355s] [ 53%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orca_msgs/msg/detail/dds_fastrtps/effort__type_support.cpp.o[0m
+[16.672s] [ 55%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orca_msgs/action/detail/target_mode__type_support_c.cpp.o[0m
+[16.860s] [ 57%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orca_msgs/action/detail/target_mode__type_support.c.o[0m
+[16.915s] [ 59%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orca_msgs/msg/detail/effort__type_support_c.cpp.o[0m
+[16.980s] [ 59%] Built target orca_msgs__rosidl_typesupport_introspection_cpp
+[17.015s] [ 61%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orca_msgs/msg/detail/effort__type_support.c.o[0m
+[17.146s] [ 63%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orca_msgs/msg/detail/dds_fastrtps/motion__type_support.cpp.o[0m
+[17.428s] [ 65%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orca_msgs/msg/detail/motion__type_support.c.o[0m
+[18.004s] [ 68%] [32m[1mLinking C shared library liborca_msgs__rosidl_typesupport_introspection_c.so[0m
+[18.248s] [ 68%] Built target orca_msgs__rosidl_typesupport_introspection_c
+[18.267s] [ 70%] [32mBuilding CXX object CMakeFiles/orca_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orca_msgs/msg/detail/motion__type_support_c.cpp.o[0m
+[18.938s] [ 72%] [32m[1mLinking CXX shared library liborca_msgs__rosidl_typesupport_cpp.so[0m
+[19.195s] [ 72%] Built target orca_msgs__rosidl_typesupport_cpp
+[20.755s] [ 74%] [32m[1mLinking CXX shared library liborca_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[21.317s] [ 76%] [32m[1mLinking CXX shared library liborca_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[21.517s] [ 76%] Built target orca_msgs__rosidl_typesupport_fastrtps_cpp
+[21.955s] [ 76%] Built target orca_msgs__rosidl_typesupport_fastrtps_c
+[22.069s] [ 76%] Built target orca_msgs
+[22.139s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[32.663s] [ 78%] Built target orca_msgs__py
+[32.760s] [ 80%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_generator_py.dir/rosidl_generator_py/orca_msgs/action/_target_mode_s.c.o[0m
+[32.779s] [ 82%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_generator_py.dir/rosidl_generator_py/orca_msgs/msg/_effort_s.c.o[0m
+[32.781s] [ 85%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_generator_py.dir/rosidl_generator_py/orca_msgs/msg/_motion_s.c.o[0m
+[33.903s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/orca_msgs/liborca_msgs__rosidl_generator_py.so[0m
+[34.176s] [ 87%] Built target orca_msgs__rosidl_generator_py
+[34.297s] [ 89%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/orca_msgs/_orca_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[34.309s] [ 91%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/orca_msgs/_orca_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[34.342s] [ 93%] [32mBuilding C object CMakeFiles/orca_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/orca_msgs/_orca_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[34.888s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/orca_msgs/orca_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[35.015s] [ 95%] Built target orca_msgs__rosidl_typesupport_c__pyext
+[35.502s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/orca_msgs/orca_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[35.583s] [100%] [32m[1mLinking C shared library rosidl_generator_py/orca_msgs/orca_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[35.756s] [100%] Built target orca_msgs__rosidl_typesupport_fastrtps_c__pyext
+[35.762s] [100%] Built target orca_msgs__rosidl_typesupport_introspection_c__pyext
+[35.836s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_msgs -- -j8 -l8
+[35.837s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_msgs
+[35.879s] -- Install configuration: ""
+[35.880s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/ament_index/resource_index/rosidl_interfaces/orca_msgs
+[35.880s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs
+[35.882s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg
+[35.882s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/effort.h
+[35.883s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/rosidl_generator_c__visibility_control.h
+[35.883s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/motion.h
+[35.883s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail
+[35.886s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__type_support.h
+[35.888s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__struct.h
+[35.889s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__functions.c
+[35.889s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__struct.h
+[35.889s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__type_support.h
+[35.890s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__functions.c
+[35.890s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__functions.h
+[35.890s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__functions.h
+[35.890s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action
+[35.892s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/target_mode.h
+[35.892s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail
+[35.893s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__functions.c
+[35.894s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__type_support.h
+[35.894s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__struct.h
+[35.894s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__functions.h
+[35.897s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/library_path.sh
+[35.897s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/library_path.dsv
+[35.899s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_generator_c.so
+[35.900s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_generator_c.so" to ""
+[35.900s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs
+[35.901s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg
+[35.901s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[35.902s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail
+[35.902s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__rosidl_typesupport_fastrtps_c.h
+[35.902s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_c.h
+[35.902s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action
+[35.903s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail
+[35.906s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__rosidl_typesupport_fastrtps_c.h
+[35.906s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_fastrtps_c.so
+[35.907s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[35.908s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs
+[35.908s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg
+[35.909s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[35.911s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail
+[35.911s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__type_support.c
+[35.911s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__rosidl_typesupport_introspection_c.h
+[35.911s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__rosidl_typesupport_introspection_c.h
+[35.914s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__type_support.c
+[35.914s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action
+[35.915s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail
+[35.915s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__rosidl_typesupport_introspection_c.h
+[35.915s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__type_support.c
+[35.918s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_introspection_c.so
+[35.918s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_introspection_c.so" to ""
+[35.918s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_c.so
+[35.919s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_c.so" to ""
+[35.919s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs
+[35.919s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg
+[35.919s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[35.920s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/effort.hpp
+[35.920s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail
+[35.922s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__traits.hpp
+[35.925s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__type_support.hpp
+[35.925s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__type_support.hpp
+[35.925s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__traits.hpp
+[35.926s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__builder.hpp
+[35.926s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__struct.hpp
+[35.926s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__struct.hpp
+[35.926s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__builder.hpp
+[35.927s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/motion.hpp
+[35.927s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action
+[35.927s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/target_mode.hpp
+[35.927s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail
+[35.929s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__builder.hpp
+[35.933s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__traits.hpp
+[35.933s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__struct.hpp
+[35.933s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__type_support.hpp
+[35.933s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs
+[35.934s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg
+[35.934s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[35.934s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail
+[35.934s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/dds_fastrtps
+[35.935s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__rosidl_typesupport_fastrtps_cpp.hpp
+[35.935s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__rosidl_typesupport_fastrtps_cpp.hpp
+[35.935s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action
+[35.935s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail
+[35.940s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/dds_fastrtps
+[35.940s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[35.940s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_fastrtps_cpp.so
+[35.940s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[35.941s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs
+[35.941s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg
+[35.941s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail
+[35.941s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__rosidl_typesupport_introspection_cpp.hpp
+[35.941s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/effort__type_support.cpp
+[35.942s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__rosidl_typesupport_introspection_cpp.hpp
+[35.942s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/msg/detail/motion__type_support.cpp
+[35.942s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action
+[35.942s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail
+[35.943s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__type_support.cpp
+[35.943s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/include/orca_msgs/orca_msgs/action/detail/target_mode__rosidl_typesupport_introspection_cpp.hpp
+[35.943s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_introspection_cpp.so
+[35.943s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[35.944s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_cpp.so
+[35.944s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_typesupport_cpp.so" to ""
+[35.944s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/pythonpath.sh
+[35.944s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/pythonpath.dsv
+[35.945s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs-0.5.0-py3.10.egg-info
+[35.945s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs-0.5.0-py3.10.egg-info/PKG-INFO
+[35.945s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs-0.5.0-py3.10.egg-info/dependency_links.txt
+[35.945s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs-0.5.0-py3.10.egg-info/SOURCES.txt
+[35.945s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs-0.5.0-py3.10.egg-info/top_level.txt
+[35.946s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs
+[35.946s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[35.946s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/_orca_msgs_s.ep.rosidl_typesupport_c.c
+[35.946s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/_orca_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[35.946s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/liborca_msgs__rosidl_generator_py.so
+[35.950s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[35.950s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg
+[35.950s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/_effort.py
+[35.950s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/_effort_s.c
+[35.951s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/_motion.py
+[35.951s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/__init__.py
+[35.951s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/_motion_s.c
+[35.951s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/__init__.py
+[35.951s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[35.952s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/_orca_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[35.952s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/action
+[35.952s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/action/__init__.py
+[35.952s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/action/_target_mode.py
+[35.952s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/action/_target_mode_s.c
+[36.241s] Listing '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs'...
+[36.241s] Compiling '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/__init__.py'...
+[36.242s] Listing '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/action'...
+[36.242s] Compiling '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/action/__init__.py'...
+[36.242s] Compiling '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/action/_target_mode.py'...
+[36.242s] Listing '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg'...
+[36.243s] Compiling '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/__init__.py'...
+[36.243s] Compiling '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/_effort.py'...
+[36.243s] Compiling '/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/msg/_motion.py'...
+[36.276s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[36.277s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[36.277s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[36.278s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[36.283s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[36.284s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages/orca_msgs/orca_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[36.284s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_generator_py.so
+[36.289s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/liborca_msgs__rosidl_generator_py.so" to ""
+[36.289s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/action/TargetMode.idl
+[36.290s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/msg/Effort.idl
+[36.290s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/msg/Motion.idl
+[36.291s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/action/TargetMode.action
+[36.291s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/msg/Effort.msg
+[36.291s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/msg/Motion.msg
+[36.292s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/ament_index/resource_index/package_run_dependencies/orca_msgs
+[36.296s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/ament_index/resource_index/parent_prefix_path/orca_msgs
+[36.298s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/ament_prefix_path.sh
+[36.298s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/ament_prefix_path.dsv
+[36.299s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/path.sh
+[36.303s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/environment/path.dsv
+[36.303s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/local_setup.bash
+[36.303s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/local_setup.sh
+[36.305s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/local_setup.zsh
+[36.306s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/local_setup.dsv
+[36.306s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.dsv
+[36.306s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/ament_index/resource_index/packages/orca_msgs
+[36.307s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_generator_cExport.cmake
+[36.307s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_generator_cExport-noconfig.cmake
+[36.307s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[36.308s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[36.308s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_introspection_cExport.cmake
+[36.317s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[36.317s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_cExport.cmake
+[36.317s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[36.318s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_generator_cppExport.cmake
+[36.318s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[36.318s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[36.319s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[36.319s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[36.319s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_cppExport.cmake
+[36.320s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[36.324s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_generator_pyExport.cmake
+[36.324s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/export_orca_msgs__rosidl_generator_pyExport-noconfig.cmake
+[36.324s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/rosidl_cmake-extras.cmake
+[36.329s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[36.330s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[36.330s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[36.330s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[36.331s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[36.331s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[36.331s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgsConfig.cmake
+[36.332s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/cmake/orca_msgsConfig-version.cmake
+[36.332s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.xml
+[36.365s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_msgs

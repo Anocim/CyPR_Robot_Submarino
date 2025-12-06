@@ -1,0 +1,94 @@
+[0.076s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_base': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_base -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_base
+[0.394s] -- The C compiler identification is GNU 11.4.0
+[0.725s] -- The CXX compiler identification is GNU 11.4.0
+[0.771s] -- Detecting C compiler ABI info
+[1.124s] -- Detecting C compiler ABI info - done
+[1.156s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.157s] -- Detecting C compile features
+[1.161s] -- Detecting C compile features - done
+[1.168s] -- Detecting CXX compiler ABI info
+[1.532s] -- Detecting CXX compiler ABI info - done
+[1.594s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.601s] -- Detecting CXX compile features
+[1.603s] -- Detecting CXX compile features - done
+[1.618s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[2.197s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.230s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.251s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.284s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.336s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.716s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.727s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.062s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.178s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.342s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.375s] -- Looking for pthread.h
+[4.588s] -- Looking for pthread.h - found
+[4.596s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.941s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.949s] -- Found Threads: TRUE  
+[6.857s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[6.862s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.865s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[8.045s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.180s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/orca_base` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[8.192s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.197s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.205s] -- Configured cppcheck include dirs: /home/alejandro/cpr/colcon_ws/src/orca4/orca_base/include
+[8.206s] -- Configured cppcheck exclude dirs and/or files: 
+[8.215s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.216s] -- Configured cpplint exclude dirs and/or files: 
+[8.217s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.223s] -- Added test 'lint_cmake' to check CMake code style
+[8.225s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.235s] -- Added test 'uncrustify' to check C / C++ code style
+[8.235s] -- Configured uncrustify additional arguments: 
+[8.238s] -- Added test 'xmllint' to check XML markup files
+[8.249s] -- Configuring done
+[8.737s] -- Generating done
+[8.852s] -- Build files have been written to: /home/alejandro/cpr/colcon_ws/build/orca_base
+[8.897s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_base' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_base -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_base
+[8.905s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_base': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_base -- -j8 -l8
+[9.178s] [ 14%] [32mBuilding CXX object CMakeFiles/base_controller.dir/src/underwater_motion.cpp.o[0m
+[9.181s] [ 28%] [32mBuilding CXX object CMakeFiles/base_controller.dir/src/base_controller.cpp.o[0m
+[9.183s] [ 42%] [32mBuilding CXX object CMakeFiles/camera_info_publisher.dir/src/camera_info_publisher.cpp.o[0m
+[31.960s] [ 57%] [32m[1mLinking CXX executable camera_info_publisher[0m
+[33.460s] [ 57%] Built target camera_info_publisher
+[56.978s] [ 71%] [32m[1mLinking CXX executable base_controller[0m
+[60.917s] [ 71%] Built target base_controller
+[61.031s] [ 85%] [32mBuilding CXX object CMakeFiles/manager.dir/src/manager.cpp.o[0m
+[95.433s] [100%] [32m[1mLinking CXX executable manager[0m
+[98.123s] [100%] Built target manager
+[98.143s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_base' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_base -- -j8 -l8
+[98.147s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_base': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_base
+[98.159s] -- Install configuration: ""
+[98.160s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/lib/orca_base/test_base.py
+[98.160s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/include
+[98.161s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/include/orca_base
+[98.161s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/include/orca_base/base_context.hpp
+[98.161s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/include/orca_base/underwater_motion.hpp
+[98.161s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/lib/orca_base/base_controller
+[98.170s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_base/lib/orca_base/base_controller" to ""
+[98.170s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/lib/orca_base/camera_info_publisher
+[98.173s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_base/lib/orca_base/camera_info_publisher" to ""
+[98.173s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/lib/orca_base/manager
+[98.184s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_base/lib/orca_base/manager" to ""
+[98.184s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/ament_index/resource_index/package_run_dependencies/orca_base
+[98.184s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/ament_index/resource_index/parent_prefix_path/orca_base
+[98.185s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/environment/ament_prefix_path.sh
+[98.185s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/environment/ament_prefix_path.dsv
+[98.186s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/environment/path.sh
+[98.186s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/environment/path.dsv
+[98.186s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/local_setup.bash
+[98.187s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/local_setup.sh
+[98.187s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/local_setup.zsh
+[98.187s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/local_setup.dsv
+[98.188s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.dsv
+[98.188s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/ament_index/resource_index/packages/orca_base
+[98.188s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/cmake/ament_cmake_export_dependencies-extras.cmake
+[98.189s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/cmake/ament_cmake_export_include_directories-extras.cmake
+[98.189s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/cmake/orca_baseConfig.cmake
+[98.189s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/cmake/orca_baseConfig-version.cmake
+[98.189s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.xml
+[98.192s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_base' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_base

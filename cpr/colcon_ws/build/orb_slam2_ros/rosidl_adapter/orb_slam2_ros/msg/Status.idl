@@ -1,0 +1,63 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from orb_slam2_ros/msg/Status.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "std_msgs/msg/Header.idl"
+
+module orb_slam2_ros {
+  module msg {
+    module Status_Constants {
+      @verbatim (language="comment", text=
+        "LOADING ORB VOCABULARY. PLEASE WAIT...")
+      const int32 STATE_SYSTEM_NOT_READY = -1;
+      @verbatim (language="comment", text=
+        "WAITING FOR IMAGES")
+      const int32 STATE_NO_IMAGES_YET = 0;
+      @verbatim (language="comment", text=
+        "TRYING TO INITIALIZE")
+      const int32 STATE_NOT_INITIALIZED = 1;
+      @verbatim (language="comment", text=
+        "if !mbOnlyTracking SLAM MODE else LOCALIZATION")
+      const int32 STATE_OK = 2;
+      @verbatim (language="comment", text=
+        "TRACK LOST. TRYING TO RELOCALIZE")
+      const int32 STATE_LOST = 3;
+    };
+    @verbatim (language="comment", text=
+      "Time when SLAM processing completed")
+    struct Status {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Image time(s)")
+      builtin_interfaces::msg::Time left_stamp;
+
+      builtin_interfaces::msg::Time right_stamp;
+
+      @verbatim (language="comment", text=
+        "mState")
+      int32 state;
+
+      @verbatim (language="comment", text=
+        "mbOnlyTracking")
+      boolean only_tracking;
+
+      @verbatim (language="comment", text=
+        "mpMap->KeyFramesInMap()")
+      int32 keyframes;
+
+      @verbatim (language="comment", text=
+        "mpMap->MapPointsInMap()")
+      int32 map_points;
+
+      @verbatim (language="comment", text=
+        "mnTracked")
+      int32 tracked;
+
+      @verbatim (language="comment", text=
+        "mnTrackedVO")
+      int32 tracked_vo;
+    };
+  };
+};

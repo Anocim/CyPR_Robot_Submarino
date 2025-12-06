@@ -1,0 +1,12 @@
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/uninstall.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/orca_base_uninstall.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/base_controller.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/camera_info_publisher.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/manager.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/test.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/edit_cache.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/rebuild_cache.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/list_install_components.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/install.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/install/local.dir
+/home/alejandro/cpr/colcon_ws/build/orca_base/CMakeFiles/install/strip.dir

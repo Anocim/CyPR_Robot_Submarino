@@ -1,0 +1,8 @@
+{
+  "package_name": "orca_msgs",
+  "non_idl_tuples": [
+    "/home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs:action/TargetMode.action",
+    "/home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs:msg/Effort.msg",
+    "/home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs:msg/Motion.msg"
+  ]
+}

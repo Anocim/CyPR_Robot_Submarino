@@ -1,0 +1,9 @@
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/uninstall.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/orca_bringup_uninstall.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/test.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/edit_cache.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/rebuild_cache.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/list_install_components.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/install.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/install/local.dir
+/home/alejandro/cpr/colcon_ws/build/orca_bringup/CMakeFiles/install/strip.dir

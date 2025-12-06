@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from orca_msgs/msg/Motion.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Accel.idl"
+#include "geometry_msgs/msg/Pose.idl"
+#include "geometry_msgs/msg/Twist.idl"
+#include "geometry_msgs/msg/Wrench.idl"
+#include "orca_msgs/msg/Effort.idl"
+#include "std_msgs/msg/Header.idl"
+
+module orca_msgs {
+  module msg {
+    struct Motion {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Inputs")
+      geometry_msgs::msg::Twist cmd_vel;
+
+      double dt;
+
+      @verbatim (language="comment", text=
+        "Outputs" "\n"
+        "Pose is in the world frame; acceleration, velocity, force and effort are in the robot frame" "\n"
+        "Accel to move from v0 to v1")
+      geometry_msgs::msg::Accel accel_model;
+
+      @verbatim (language="comment", text=
+        "Accel to counteract drag")
+      geometry_msgs::msg::Accel accel_drag;
+
+      geometry_msgs::msg::Accel accel_total;
+
+      geometry_msgs::msg::Twist vel;
+
+      geometry_msgs::msg::Pose pose;
+
+      geometry_msgs::msg::Wrench force;
+
+      @verbatim (language="comment", text=
+        "Force normalized to [-1, 1]")
+      orca_msgs::msg::Effort effort;
+    };
+  };
+};

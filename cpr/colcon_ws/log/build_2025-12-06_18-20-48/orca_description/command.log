@@ -1,0 +1,6 @@
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_description -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_description
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_description -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_description
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_description -- -j8 -l8
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_description -- -j8 -l8
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_description
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_description

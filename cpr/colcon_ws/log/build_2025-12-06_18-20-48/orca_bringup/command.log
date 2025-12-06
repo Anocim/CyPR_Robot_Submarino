@@ -1,0 +1,6 @@
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_bringup
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_bringup
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_bringup -- -j8 -l8
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_bringup -- -j8 -l8
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_bringup
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_bringup

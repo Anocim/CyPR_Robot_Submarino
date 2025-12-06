@@ -1,0 +1,7 @@
+{
+  "package_name": "orb_slam2_ros",
+  "non_idl_tuples": [
+    "/home/alejandro/cpr/colcon_ws/src/orb_slam_2_ros:srv/SaveMap.srv",
+    "/home/alejandro/cpr/colcon_ws/src/orb_slam_2_ros:msg/Status.msg"
+  ]
+}

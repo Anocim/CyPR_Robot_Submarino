@@ -1,0 +1,804 @@
+[0.244s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.244s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x722b76363130>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x722b76362c80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x722b76362c80>>, mixin_verb=('build',))
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.645s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alejandro/cpr/colcon_ws'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.668s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.669s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.670s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.671s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extension 'ignore'
+[0.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extension 'ignore_ament_install'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extensions ['colcon_pkg']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extension 'colcon_pkg'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extensions ['colcon_meta']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extension 'colcon_meta'
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extensions ['ros']
+[0.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/ardupilot_gazebo) by extension 'ros'
+[0.708s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ardupilot_gazebo' with type 'ros.ament_cmake' and name 'ardupilot_gazebo'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extension 'ignore'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extension 'ignore_ament_install'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extensions ['colcon_pkg']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extension 'colcon_pkg'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extensions ['colcon_meta']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extension 'colcon_meta'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extensions ['ros']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/bluerov2_gz) by extension 'ros'
+[0.710s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bluerov2_gz' with type 'ros.ament_cmake' and name 'bluerov2_gz'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extension 'ignore'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extension 'ignore_ament_install'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extensions ['colcon_pkg']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extension 'colcon_pkg'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extensions ['colcon_meta']
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extension 'colcon_meta'
+[0.711s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extensions ['ros']
+[0.712s] Level 1:colcon.colcon_core.package_identification:_identify(src/orb_slam_2_ros) by extension 'ros'
+[0.713s] DEBUG:colcon.colcon_core.package_identification:Package 'src/orb_slam_2_ros' with type 'ros.ament_cmake' and name 'orb_slam2_ros'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extensions ['ignore', 'ignore_ament_install']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'ignore'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'ignore_ament_install'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extensions ['colcon_pkg']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'colcon_pkg'
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extensions ['colcon_meta']
+[0.714s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'colcon_meta'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extensions ['ros']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'ros'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extensions ['cmake', 'python']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'cmake'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'python'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extensions ['python_setup_py']
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4) by extension 'python_setup_py'
+[0.715s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'ignore'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'ignore_ament_install'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extensions ['colcon_pkg']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'colcon_pkg'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extensions ['colcon_meta']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'colcon_meta'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extensions ['ros']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'ros'
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extensions ['cmake', 'python']
+[0.716s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'cmake'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'python'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extensions ['python_setup_py']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/docker) by extension 'python_setup_py'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extensions ['ignore', 'ignore_ament_install']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'ignore'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'ignore_ament_install'
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extensions ['colcon_pkg']
+[0.717s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'colcon_pkg'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extensions ['colcon_meta']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'colcon_meta'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extensions ['ros']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'ros'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extensions ['cmake', 'python']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'cmake'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'python'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extensions ['python_setup_py']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/images) by extension 'python_setup_py'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extension 'ignore'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extension 'ignore_ament_install'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extensions ['colcon_pkg']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extension 'colcon_pkg'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extensions ['colcon_meta']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extension 'colcon_meta'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extensions ['ros']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_base) by extension 'ros'
+[0.723s] DEBUG:colcon.colcon_core.package_identification:Package 'src/orca4/orca_base' with type 'ros.ament_cmake' and name 'orca_base'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extension 'ignore'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extension 'ignore_ament_install'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extensions ['colcon_pkg']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extension 'colcon_pkg'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extensions ['colcon_meta']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extension 'colcon_meta'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extensions ['ros']
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_bringup) by extension 'ros'
+[0.725s] DEBUG:colcon.colcon_core.package_identification:Package 'src/orca4/orca_bringup' with type 'ros.ament_cmake' and name 'orca_bringup'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extensions ['ignore', 'ignore_ament_install']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extension 'ignore'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extension 'ignore_ament_install'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extensions ['colcon_pkg']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extension 'colcon_pkg'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extension 'colcon_meta'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extensions ['ros']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_description) by extension 'ros'
+[0.728s] DEBUG:colcon.colcon_core.package_identification:Package 'src/orca4/orca_description' with type 'ros.ament_cmake' and name 'orca_description'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extension 'ignore'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extension 'ignore_ament_install'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extensions ['colcon_pkg']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extension 'colcon_pkg'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extensions ['colcon_meta']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extension 'colcon_meta'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extensions ['ros']
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_msgs) by extension 'ros'
+[0.730s] DEBUG:colcon.colcon_core.package_identification:Package 'src/orca4/orca_msgs' with type 'ros.ament_cmake' and name 'orca_msgs'
+[0.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extensions ['ignore', 'ignore_ament_install']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extension 'ignore'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extension 'ignore_ament_install'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extensions ['colcon_pkg']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extension 'colcon_pkg'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extensions ['colcon_meta']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extension 'colcon_meta'
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extensions ['ros']
+[0.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_nav2) by extension 'ros'
+[0.735s] DEBUG:colcon.colcon_core.package_identification:Package 'src/orca4/orca_nav2' with type 'ros.ament_cmake' and name 'orca_nav2'
+[0.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extensions ['ignore', 'ignore_ament_install']
+[0.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extension 'ignore'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extension 'ignore_ament_install'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extensions ['colcon_pkg']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extension 'colcon_pkg'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extensions ['colcon_meta']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extension 'colcon_meta'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extensions ['ros']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/orca4/orca_shared) by extension 'ros'
+[0.739s] DEBUG:colcon.colcon_core.package_identification:Package 'src/orca4/orca_shared' with type 'ros.ament_cmake' and name 'orca_shared'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ignore', 'ignore_ament_install']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore_ament_install'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_pkg']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_pkg'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_meta']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_meta'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ros']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ros'
+[0.741s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_shared' with type 'ros.ament_cmake' and name 'ros2_shared'
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.793s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 474 installed packages in /opt/ros/humble
+[0.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.927s] Level 5:colcon.colcon_core.verb:set package 'ardupilot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.927s] DEBUG:colcon.colcon_core.verb:Building package 'ardupilot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/ardupilot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'cmake_args' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'cmake_target' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.928s] Level 5:colcon.colcon_core.verb:set package 'bluerov2_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.928s] DEBUG:colcon.colcon_core.verb:Building package 'bluerov2_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/bluerov2_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/bluerov2_gz', 'symlink_install': False, 'test_result_base': None}
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'cmake_args' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'cmake_target' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.929s] Level 5:colcon.colcon_core.verb:set package 'orb_slam2_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.929s] DEBUG:colcon.colcon_core.verb:Building package 'orb_slam2_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/orb_slam2_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/orb_slam_2_ros', 'symlink_install': False, 'test_result_base': None}
+[0.930s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'cmake_args' from command line to 'None'
+[0.930s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'cmake_target' from command line to 'None'
+[0.930s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.930s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.930s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.931s] Level 5:colcon.colcon_core.verb:set package 'orca_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.931s] DEBUG:colcon.colcon_core.verb:Building package 'orca_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/orca_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/orca_bringup', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'cmake_target' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.932s] Level 5:colcon.colcon_core.verb:set package 'orca_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.932s] DEBUG:colcon.colcon_core.verb:Building package 'orca_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/orca_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/orca_description', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/orca4/orca_description', 'symlink_install': False, 'test_result_base': None}
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'cmake_target' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.933s] Level 5:colcon.colcon_core.verb:set package 'orca_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.933s] DEBUG:colcon.colcon_core.verb:Building package 'orca_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/orca_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/orca_msgs', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_cache' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_first' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_force_configure' from command line to 'False'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'ament_cmake_args' from command line to 'None'
+[0.934s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_cmake_args' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.935s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_shared' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/ros2_shared', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/ros2_shared', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/ros2_shared', 'symlink_install': False, 'test_result_base': None}
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'cmake_args' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'cmake_target' from command line to 'None'
+[0.935s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'cmake_clean_cache' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'cmake_clean_first' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'cmake_force_configure' from command line to 'False'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'ament_cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'catkin_cmake_args' from command line to 'None'
+[0.936s] Level 5:colcon.colcon_core.verb:set package 'orca_shared' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.936s] DEBUG:colcon.colcon_core.verb:Building package 'orca_shared' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/orca_shared', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/orca_shared', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/orca4/orca_shared', 'symlink_install': False, 'test_result_base': None}
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'cmake_target' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'orca_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.937s] DEBUG:colcon.colcon_core.verb:Building package 'orca_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/orca_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/orca_base', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/orca4/orca_base', 'symlink_install': False, 'test_result_base': None}
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'cmake_args' from command line to 'None'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'cmake_target' from command line to 'None'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'cmake_clean_first' from command line to 'False'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'cmake_force_configure' from command line to 'False'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'ament_cmake_args' from command line to 'None'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.938s] Level 5:colcon.colcon_core.verb:set package 'orca_nav2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.938s] DEBUG:colcon.colcon_core.verb:Building package 'orca_nav2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alejandro/cpr/colcon_ws/build/orca_nav2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alejandro/cpr/colcon_ws/install/orca_nav2', 'merge_install': False, 'path': '/home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2', 'symlink_install': False, 'test_result_base': None}
+[0.939s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.940s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.941s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs' with build type 'ament_cmake'
+[0.941s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs'
+[0.946s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.946s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.946s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.953s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/ros2_shared' with build type 'ament_cmake'
+[0.953s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/ros2_shared'
+[0.954s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.954s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.960s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/ardupilot_gazebo' with build type 'ament_cmake'
+[0.960s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/ardupilot_gazebo'
+[0.960s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.960s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.966s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/bluerov2_gz' with build type 'ament_cmake'
+[0.966s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/bluerov2_gz'
+[0.967s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.967s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.973s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/orb_slam_2_ros' with build type 'ament_cmake'
+[0.973s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/orb_slam_2_ros'
+[0.974s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.974s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.982s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup' with build type 'ament_cmake'
+[0.982s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup'
+[0.983s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.983s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.989s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_description' with build type 'ament_cmake'
+[0.989s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_description'
+[0.990s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.990s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_msgs
+[1.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/ros2_shared
+[1.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/ardupilot_gazebo -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo
+[1.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/bluerov2_gz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/bluerov2_gz -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/bluerov2_gz
+[1.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orb_slam2_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orb_slam_2_ros -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros
+[1.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_bringup
+[1.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_description -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_description
+[2.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/bluerov2_gz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/bluerov2_gz -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/bluerov2_gz
+[2.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/bluerov2_gz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/bluerov2_gz -- -j8 -l8
+[2.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_description -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_description
+[2.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_description -- -j8 -l8
+[2.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_bringup
+[2.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_bringup -- -j8 -l8
+[2.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/bluerov2_gz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/bluerov2_gz -- -j8 -l8
+[2.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/bluerov2_gz': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/bluerov2_gz
+[2.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_description -- -j8 -l8
+[2.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_description
+[2.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_bringup -- -j8 -l8
+[2.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_bringup
+[2.948s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_description)
+[2.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_description
+[2.963s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description' for CMake module files
+[2.965s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description' for CMake config files
+[2.966s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_description', 'cmake_prefix_path')
+[2.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/hook/cmake_prefix_path.ps1'
+[2.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/hook/cmake_prefix_path.dsv'
+[2.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/hook/cmake_prefix_path.sh'
+[2.974s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/bin'
+[2.974s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/lib/pkgconfig/orca_description.pc'
+[2.975s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/lib/python3.10/site-packages'
+[2.976s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/bin'
+[2.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.ps1'
+[2.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.dsv'
+[2.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.sh'
+[2.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.bash'
+[2.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.zsh'
+[2.989s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_description/share/colcon-core/packages/orca_description)
+[2.991s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_description)
+[2.991s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description' for CMake module files
+[2.992s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description' for CMake config files
+[2.993s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_description', 'cmake_prefix_path')
+[2.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/hook/cmake_prefix_path.ps1'
+[2.994s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/hook/cmake_prefix_path.dsv'
+[2.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/hook/cmake_prefix_path.sh'
+[2.996s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/bin'
+[2.996s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/lib/pkgconfig/orca_description.pc'
+[2.997s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/lib/python3.10/site-packages'
+[2.997s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_description/bin'
+[2.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.ps1'
+[2.999s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.dsv'
+[3.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.sh'
+[3.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.bash'
+[3.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_description/share/orca_description/package.zsh'
+[3.003s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_description/share/colcon-core/packages/orca_description)
+[3.004s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_bringup)
+[3.005s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup' for CMake module files
+[3.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_bringup
+[3.008s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup' for CMake config files
+[3.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_bringup', 'cmake_prefix_path')
+[3.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/hook/cmake_prefix_path.ps1'
+[3.012s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/hook/cmake_prefix_path.dsv'
+[3.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/hook/cmake_prefix_path.sh'
+[3.016s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/lib'
+[3.017s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/bin'
+[3.017s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/pkgconfig/orca_bringup.pc'
+[3.020s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/python3.10/site-packages'
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/bin'
+[3.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.ps1'
+[3.024s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.dsv'
+[3.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.sh'
+[3.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.bash'
+[3.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.zsh'
+[3.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/colcon-core/packages/orca_bringup)
+[3.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_bringup)
+[3.029s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup' for CMake module files
+[3.030s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup' for CMake config files
+[3.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_bringup', 'cmake_prefix_path')
+[3.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/hook/cmake_prefix_path.ps1'
+[3.032s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/hook/cmake_prefix_path.dsv'
+[3.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/hook/cmake_prefix_path.sh'
+[3.034s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/lib'
+[3.034s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/bin'
+[3.034s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/pkgconfig/orca_bringup.pc'
+[3.035s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/python3.10/site-packages'
+[3.035s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_bringup/bin'
+[3.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.ps1'
+[3.037s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.dsv'
+[3.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.sh'
+[3.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.bash'
+[3.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.zsh'
+[3.041s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_bringup/share/colcon-core/packages/orca_bringup)
+[3.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bluerov2_gz)
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz' for CMake module files
+[3.046s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/bluerov2_gz' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/bluerov2_gz
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz' for CMake config files
+[3.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluerov2_gz', 'cmake_prefix_path')
+[3.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/hook/cmake_prefix_path.ps1'
+[3.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/hook/cmake_prefix_path.dsv'
+[3.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/hook/cmake_prefix_path.sh'
+[3.051s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/bin'
+[3.051s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/lib/pkgconfig/bluerov2_gz.pc'
+[3.051s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/lib/python3.10/site-packages'
+[3.052s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/bin'
+[3.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.ps1'
+[3.054s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.dsv'
+[3.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.sh'
+[3.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.bash'
+[3.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.zsh'
+[3.059s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/colcon-core/packages/bluerov2_gz)
+[3.060s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bluerov2_gz)
+[3.061s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz' for CMake module files
+[3.063s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz' for CMake config files
+[3.064s] Level 1:colcon.colcon_core.shell:create_environment_hook('bluerov2_gz', 'cmake_prefix_path')
+[3.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/hook/cmake_prefix_path.ps1'
+[3.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/hook/cmake_prefix_path.dsv'
+[3.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/hook/cmake_prefix_path.sh'
+[3.069s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/bin'
+[3.069s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/lib/pkgconfig/bluerov2_gz.pc'
+[3.070s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/lib/python3.10/site-packages'
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/bin'
+[3.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.ps1'
+[3.074s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.dsv'
+[3.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.sh'
+[3.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.bash'
+[3.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.zsh'
+[3.079s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/colcon-core/packages/bluerov2_gz)
+[3.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/ros2_shared
+[3.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/ros2_shared -- -j8 -l8
+[4.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/ros2_shared -- -j8 -l8
+[4.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/ros2_shared
+[4.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[4.091s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared' for CMake module files
+[4.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/ros2_shared
+[4.093s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared' for CMake config files
+[4.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[4.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[4.096s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[4.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[4.098s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/bin'
+[4.098s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[4.099s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/lib/python3.10/site-packages'
+[4.100s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/bin'
+[4.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.ps1'
+[4.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.dsv'
+[4.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.sh'
+[4.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.bash'
+[4.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.zsh'
+[4.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[4.107s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[4.107s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared' for CMake module files
+[4.108s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared' for CMake config files
+[4.108s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[4.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[4.110s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[4.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[4.111s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/bin'
+[4.112s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[4.112s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/lib/python3.10/site-packages'
+[4.113s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ros2_shared/bin'
+[4.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.ps1'
+[4.114s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.dsv'
+[4.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.sh'
+[4.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.bash'
+[4.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/ros2_shared/package.zsh'
+[4.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[5.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/ardupilot_gazebo -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo
+[5.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo -- -j8 -l8
+[5.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_msgs -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_msgs
+[5.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_msgs -- -j8 -l8
+[8.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orb_slam2_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orb_slam_2_ros -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros
+[8.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orb_slam2_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orb_slam2_ros -- -j8 -l8
+[36.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_msgs -- -j8 -l8
+[36.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_msgs
+[37.285s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_msgs)
+[37.286s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs' for CMake module files
+[37.291s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs' for CMake config files
+[37.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_msgs', 'cmake_prefix_path')
+[37.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/cmake_prefix_path.ps1'
+[37.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/cmake_prefix_path.dsv'
+[37.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/cmake_prefix_path.sh'
+[37.305s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib'
+[37.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_msgs', 'ld_library_path_lib')
+[37.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/ld_library_path_lib.ps1'
+[37.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/ld_library_path_lib.dsv'
+[37.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_msgs
+[37.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/ld_library_path_lib.sh'
+[37.315s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/bin'
+[37.315s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/pkgconfig/orca_msgs.pc'
+[37.316s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/python3.10/site-packages'
+[37.321s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/bin'
+[37.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.ps1'
+[37.328s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.dsv'
+[37.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.sh'
+[37.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.bash'
+[37.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.zsh'
+[37.336s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/colcon-core/packages/orca_msgs)
+[37.342s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_msgs)
+[37.343s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs' for CMake module files
+[37.348s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs' for CMake config files
+[37.349s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_msgs', 'cmake_prefix_path')
+[37.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/cmake_prefix_path.ps1'
+[37.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/cmake_prefix_path.dsv'
+[37.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/cmake_prefix_path.sh'
+[37.365s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib'
+[37.365s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_msgs', 'ld_library_path_lib')
+[37.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/ld_library_path_lib.ps1'
+[37.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/ld_library_path_lib.dsv'
+[37.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/hook/ld_library_path_lib.sh'
+[37.374s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/bin'
+[37.375s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/pkgconfig/orca_msgs.pc'
+[37.380s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib/python3.10/site-packages'
+[37.381s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_msgs/bin'
+[37.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.ps1'
+[37.385s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.dsv'
+[37.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.sh'
+[37.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.bash'
+[37.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/orca_msgs/package.zsh'
+[37.404s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_msgs/share/colcon-core/packages/orca_msgs)
+[37.405s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_shared' with build type 'ament_cmake'
+[37.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_shared'
+[37.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_shared': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_shared -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_shared
+[44.924s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_shared' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_shared -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_shared
+[44.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_shared': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_shared -- -j8 -l8
+[55.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo -- -j8 -l8
+[55.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo
+[55.357s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ardupilot_gazebo)
+[55.358s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo' for CMake module files
+[55.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/ardupilot_gazebo
+[55.360s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo' for CMake config files
+[55.361s] Level 1:colcon.colcon_core.shell:create_environment_hook('ardupilot_gazebo', 'cmake_prefix_path')
+[55.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/hook/cmake_prefix_path.ps1'
+[55.362s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/hook/cmake_prefix_path.dsv'
+[55.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/hook/cmake_prefix_path.sh'
+[55.364s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/lib'
+[55.364s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/bin'
+[55.364s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/lib/pkgconfig/ardupilot_gazebo.pc'
+[55.365s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/lib/python3.10/site-packages'
+[55.366s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/bin'
+[55.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.ps1'
+[55.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.dsv'
+[55.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.sh'
+[55.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.bash'
+[55.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.zsh'
+[55.371s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/colcon-core/packages/ardupilot_gazebo)
+[55.373s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ardupilot_gazebo)
+[55.373s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo' for CMake module files
+[55.374s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo' for CMake config files
+[55.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('ardupilot_gazebo', 'cmake_prefix_path')
+[55.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/hook/cmake_prefix_path.ps1'
+[55.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/hook/cmake_prefix_path.dsv'
+[55.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/hook/cmake_prefix_path.sh'
+[55.379s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/lib'
+[55.379s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/bin'
+[55.379s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/lib/pkgconfig/ardupilot_gazebo.pc'
+[55.379s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/lib/python3.10/site-packages'
+[55.380s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/bin'
+[55.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.ps1'
+[55.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.dsv'
+[55.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.sh'
+[55.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.bash'
+[55.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/ardupilot_gazebo/package.zsh'
+[55.386s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/ardupilot_gazebo/share/colcon-core/packages/ardupilot_gazebo)
+[74.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_shared' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_shared -- -j8 -l8
+[74.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_shared': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_shared
+[74.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_shared)
+[74.959s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared' for CMake module files
+[74.960s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared' for CMake config files
+[74.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_shared', 'cmake_prefix_path')
+[74.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/cmake_prefix_path.ps1'
+[74.967s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/cmake_prefix_path.dsv'
+[74.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_shared' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_shared
+[74.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/cmake_prefix_path.sh'
+[74.974s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/lib'
+[74.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_shared', 'ld_library_path_lib')
+[74.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/ld_library_path_lib.ps1'
+[74.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/ld_library_path_lib.dsv'
+[74.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/ld_library_path_lib.sh'
+[74.982s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/bin'
+[74.982s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/lib/pkgconfig/orca_shared.pc'
+[74.989s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/lib/python3.10/site-packages'
+[74.991s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/bin'
+[74.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.ps1'
+[74.997s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.dsv'
+[75.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.sh'
+[75.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.bash'
+[75.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.zsh'
+[75.010s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_shared/share/colcon-core/packages/orca_shared)
+[75.012s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_shared)
+[75.013s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared' for CMake module files
+[75.021s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared' for CMake config files
+[75.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_shared', 'cmake_prefix_path')
+[75.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/cmake_prefix_path.ps1'
+[75.024s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/cmake_prefix_path.dsv'
+[75.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/cmake_prefix_path.sh'
+[75.031s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/lib'
+[75.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_shared', 'ld_library_path_lib')
+[75.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/ld_library_path_lib.ps1'
+[75.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/ld_library_path_lib.dsv'
+[75.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/hook/ld_library_path_lib.sh'
+[75.040s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/bin'
+[75.044s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/lib/pkgconfig/orca_shared.pc'
+[75.045s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/lib/python3.10/site-packages'
+[75.046s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_shared/bin'
+[75.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.ps1'
+[75.053s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.dsv'
+[75.060s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.sh'
+[75.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.bash'
+[75.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_shared/share/orca_shared/package.zsh'
+[75.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_shared/share/colcon-core/packages/orca_shared)
+[75.069s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_base' with build type 'ament_cmake'
+[75.070s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_base'
+[75.074s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[75.074s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[75.100s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2' with build type 'ament_cmake'
+[75.100s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2'
+[75.101s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[75.105s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[75.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_base': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_base -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_base
+[75.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2 -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_nav2
+[83.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_base' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_base -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_base
+[83.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_base': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_base -- -j8 -l8
+[86.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2 -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_nav2
+[86.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_nav2 -- -j8 -l8
+[148.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_nav2 -- -j8 -l8
+[148.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_nav2
+[148.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_nav2)
+[148.734s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2' for CMake module files
+[148.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_nav2
+[148.737s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2' for CMake config files
+[148.738s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_nav2', 'cmake_prefix_path')
+[148.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/cmake_prefix_path.ps1'
+[148.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/cmake_prefix_path.dsv'
+[148.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/cmake_prefix_path.sh'
+[148.745s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib'
+[148.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_nav2', 'ld_library_path_lib')
+[148.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/ld_library_path_lib.ps1'
+[148.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/ld_library_path_lib.dsv'
+[148.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/ld_library_path_lib.sh'
+[148.750s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/bin'
+[148.750s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/pkgconfig/orca_nav2.pc'
+[148.751s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/python3.10/site-packages'
+[148.752s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/bin'
+[148.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.ps1'
+[148.755s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.dsv'
+[148.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.sh'
+[148.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.bash'
+[148.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.zsh'
+[148.762s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/colcon-core/packages/orca_nav2)
+[148.764s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_nav2)
+[148.764s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2' for CMake module files
+[148.766s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2' for CMake config files
+[148.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_nav2', 'cmake_prefix_path')
+[148.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/cmake_prefix_path.ps1'
+[148.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/cmake_prefix_path.dsv'
+[148.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/cmake_prefix_path.sh'
+[148.772s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib'
+[148.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_nav2', 'ld_library_path_lib')
+[148.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/ld_library_path_lib.ps1'
+[148.775s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/ld_library_path_lib.dsv'
+[148.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/hook/ld_library_path_lib.sh'
+[148.777s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/bin'
+[148.778s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/pkgconfig/orca_nav2.pc'
+[148.778s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/python3.10/site-packages'
+[148.780s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_nav2/bin'
+[148.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.ps1'
+[148.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.dsv'
+[148.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.sh'
+[148.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.bash'
+[148.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.zsh'
+[148.790s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_nav2/share/colcon-core/packages/orca_nav2)
+[173.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_base' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_base -- -j8 -l8
+[173.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_base': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_base
+[173.263s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_base)
+[173.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_base' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_base
+[173.265s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base' for CMake module files
+[173.266s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base' for CMake config files
+[173.266s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_base', 'cmake_prefix_path')
+[173.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/hook/cmake_prefix_path.ps1'
+[173.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/hook/cmake_prefix_path.dsv'
+[173.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/hook/cmake_prefix_path.sh'
+[173.270s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/lib'
+[173.270s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/bin'
+[173.270s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/lib/pkgconfig/orca_base.pc'
+[173.271s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/lib/python3.10/site-packages'
+[173.272s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/bin'
+[173.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.ps1'
+[173.274s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.dsv'
+[173.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.sh'
+[173.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.bash'
+[173.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.zsh'
+[173.278s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_base/share/colcon-core/packages/orca_base)
+[173.279s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orca_base)
+[173.279s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base' for CMake module files
+[173.280s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base' for CMake config files
+[173.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('orca_base', 'cmake_prefix_path')
+[173.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/hook/cmake_prefix_path.ps1'
+[173.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/hook/cmake_prefix_path.dsv'
+[173.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/hook/cmake_prefix_path.sh'
+[173.285s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/lib'
+[173.285s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/bin'
+[173.285s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/lib/pkgconfig/orca_base.pc'
+[173.286s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/lib/python3.10/site-packages'
+[173.287s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orca_base/bin'
+[173.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.ps1'
+[173.290s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.dsv'
+[173.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.sh'
+[173.292s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.bash'
+[173.294s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orca_base/share/orca_base/package.zsh'
+[173.295s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orca_base/share/colcon-core/packages/orca_base)
+[255.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orb_slam2_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orb_slam2_ros -- -j8 -l8
+[255.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alejandro/cpr/colcon_ws/build/orb_slam2_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orb_slam2_ros
+[255.519s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orb_slam2_ros)
+[255.520s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros' for CMake module files
+[255.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alejandro/cpr/colcon_ws/build/orb_slam2_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orb_slam2_ros
+[255.522s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros' for CMake config files
+[255.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('orb_slam2_ros', 'cmake_prefix_path')
+[255.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/cmake_prefix_path.ps1'
+[255.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/cmake_prefix_path.dsv'
+[255.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/cmake_prefix_path.sh'
+[255.525s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/lib'
+[255.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('orb_slam2_ros', 'ld_library_path_lib')
+[255.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/ld_library_path_lib.ps1'
+[255.527s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/ld_library_path_lib.dsv'
+[255.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/ld_library_path_lib.sh'
+[255.528s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/bin'
+[255.528s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/lib/pkgconfig/orb_slam2_ros.pc'
+[255.529s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/lib/python3.10/site-packages'
+[255.529s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/bin'
+[255.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.ps1'
+[255.531s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.dsv'
+[255.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.sh'
+[255.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.bash'
+[255.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.zsh'
+[255.534s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/colcon-core/packages/orb_slam2_ros)
+[255.536s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orb_slam2_ros)
+[255.536s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros' for CMake module files
+[255.537s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros' for CMake config files
+[255.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('orb_slam2_ros', 'cmake_prefix_path')
+[255.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/cmake_prefix_path.ps1'
+[255.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/cmake_prefix_path.dsv'
+[255.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/cmake_prefix_path.sh'
+[255.541s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/lib'
+[255.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('orb_slam2_ros', 'ld_library_path_lib')
+[255.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/ld_library_path_lib.ps1'
+[255.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/ld_library_path_lib.dsv'
+[255.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/hook/ld_library_path_lib.sh'
+[255.544s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/bin'
+[255.544s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/lib/pkgconfig/orb_slam2_ros.pc'
+[255.544s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/lib/python3.10/site-packages'
+[255.545s] Level 1:colcon.colcon_core.environment:checking '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/bin'
+[255.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.ps1'
+[255.547s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.dsv'
+[255.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.sh'
+[255.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.bash'
+[255.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/orb_slam2_ros/package.zsh'
+[255.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alejandro/cpr/colcon_ws/install/orb_slam2_ros/share/colcon-core/packages/orb_slam2_ros)
+[255.551s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[255.552s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[255.552s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[255.552s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[255.565s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[255.565s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[255.565s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[255.586s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[255.587s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alejandro/cpr/colcon_ws/install/local_setup.ps1'
+[255.589s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alejandro/cpr/colcon_ws/install/_local_setup_util_ps1.py'
+[255.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alejandro/cpr/colcon_ws/install/setup.ps1'
+[255.595s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alejandro/cpr/colcon_ws/install/local_setup.sh'
+[255.596s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alejandro/cpr/colcon_ws/install/_local_setup_util_sh.py'
+[255.597s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alejandro/cpr/colcon_ws/install/setup.sh'
+[255.600s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alejandro/cpr/colcon_ws/install/local_setup.bash'
+[255.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alejandro/cpr/colcon_ws/install/setup.bash'
+[255.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alejandro/cpr/colcon_ws/install/local_setup.zsh'
+[255.605s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alejandro/cpr/colcon_ws/install/setup.zsh'

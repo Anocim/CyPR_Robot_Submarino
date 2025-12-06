@@ -1,0 +1,6 @@
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/ros2_shared
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/ros2_shared -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/ros2_shared
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/ros2_shared -- -j8 -l8
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/ros2_shared -- -j8 -l8
+Invoking command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/ros2_shared
+Invoked command in '/home/alejandro/cpr/colcon_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/ros2_shared

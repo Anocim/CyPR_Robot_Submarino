@@ -1,0 +1,61 @@
+[0.047s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_bringup
+[0.191s] -- The C compiler identification is GNU 11.4.0
+[0.354s] -- The CXX compiler identification is GNU 11.4.0
+[0.368s] -- Detecting C compiler ABI info
+[0.541s] -- Detecting C compiler ABI info - done
+[0.573s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.574s] -- Detecting C compile features
+[0.575s] -- Detecting C compile features - done
+[0.585s] -- Detecting CXX compiler ABI info
+[0.803s] -- Detecting CXX compiler ABI info - done
+[0.831s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.831s] -- Detecting CXX compile features
+[0.831s] -- Detecting CXX compile features - done
+[0.835s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.272s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.772s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.791s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.792s] -- Added test 'lint_cmake' to check CMake code style
+[1.794s] -- Added test 'xmllint' to check XML markup files
+[1.799s] -- Configuring done
+[1.804s] -- Generating done
+[1.808s] -- Build files have been written to: /home/alejandro/cpr/colcon_ws/build/orca_bringup
+[1.822s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_bringup -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_bringup
+[1.827s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_bringup -- -j8 -l8
+[1.922s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_bringup -- -j8 -l8
+[1.927s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_bringup
+[1.966s] -- Install configuration: ""
+[1.967s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/orca_bringup/dump_rosout.py
+[1.967s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/orca_bringup/mission_runner.py
+[1.967s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/behavior_trees
+[1.967s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/behavior_trees/orca4_bt.xml
+[1.967s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg
+[1.967s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sim_launch.rviz
+[1.967s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sim_left.ini
+[1.968s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sim_right.ini
+[1.968s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sub.parm
+[1.968s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch
+[1.968s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch/navigation_launch.py
+[1.968s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch/bringup.py
+[1.968s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch/sim_launch.py
+[1.969s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params
+[1.969s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/sim_mavros_params.yaml
+[1.969s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/sim_orca_params.yaml
+[1.970s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/rosbag2_record_qos.yaml
+[1.970s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/nav2_params.yaml
+[1.970s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/ament_index/resource_index/package_run_dependencies/orca_bringup
+[1.970s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/ament_index/resource_index/parent_prefix_path/orca_bringup
+[1.970s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/ament_prefix_path.sh
+[1.970s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/ament_prefix_path.dsv
+[1.970s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/path.sh
+[1.971s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/path.dsv
+[1.971s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.bash
+[1.971s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.sh
+[1.971s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.zsh
+[1.971s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.dsv
+[1.971s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.dsv
+[1.972s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/ament_index/resource_index/packages/orca_bringup
+[1.972s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cmake/orca_bringupConfig.cmake
+[1.972s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cmake/orca_bringupConfig-version.cmake
+[1.972s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.xml
+[2.024s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_bringup

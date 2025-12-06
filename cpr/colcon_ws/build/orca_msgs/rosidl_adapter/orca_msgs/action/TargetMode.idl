@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from orca_msgs/action/TargetMode.action
+// generated code does not contain a copyright notice
+
+
+module orca_msgs {
+  module action {
+    module TargetMode_Goal_Constants {
+      const uint8 ORCA_MODE_DISARMED = 1;
+      const uint8 ORCA_MODE_ROV = 2;
+      const uint8 ORCA_MODE_AUV = 3;
+    };
+    @verbatim (language="comment", text=
+      "Goal")
+    struct TargetMode_Goal {
+      uint8 target_mode;
+    };
+    @verbatim (language="comment", text=
+      "No result")
+    struct TargetMode_Result {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "No feedback")
+    struct TargetMode_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

@@ -1,0 +1,55 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/alejandro/cpr/colcon_ws/build/orca_bringup
+-- Install configuration: ""
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/orca_bringup/dump_rosout.py
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/lib/orca_bringup/mission_runner.py
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/behavior_trees
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/behavior_trees/orca4_bt.xml
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sim_launch.rviz
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sim_left.ini
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sim_right.ini
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cfg/sub.parm
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch/navigation_launch.py
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch/bringup.py
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/launch/sim_launch.py
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/sim_mavros_params.yaml
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/sim_orca_params.yaml
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/rosbag2_record_qos.yaml
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/params/nav2_params.yaml
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/ament_index/resource_index/package_run_dependencies/orca_bringup
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/ament_index/resource_index/parent_prefix_path/orca_bringup
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/path.sh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/environment/path.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.bash
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.sh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.zsh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/local_setup.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/ament_index/resource_index/packages/orca_bringup
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cmake/orca_bringupConfig.cmake
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/cmake/orca_bringupConfig-version.cmake
+-- Installing: /home/alejandro/cpr/colcon_ws/install/orca_bringup/share/orca_bringup/package.xml

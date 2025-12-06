@@ -1,0 +1,72 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/alejandro/cpr/colcon_ws/build/bluerov2_gz
+-- Install configuration: ""
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/environment/setup.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/BlueROV2Heavy.md
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/configs.yaml
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/model.sdf
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/model.config
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/model.sdf.in
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/meshes
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/meshes/t200_cw_prop.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/meshes/bluerov2_heavy.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2_heavy/meshes/t200_ccw_prop.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/model.sdf
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/materials
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/materials/flat_normal.png
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/materials/soil_sand_0045_01.jpg
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/model.config
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/meshes
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/meshes/License and source for textures.txt
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/meshes/sandseabed.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/meshes/heightmap.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/sand_heightmap/meshes/soil_sand_0045_01.jpg
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/configs.yaml
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/model.sdf
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/model.config
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/model.sdf.in
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/meshes
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/meshes/t200_cw_prop.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/meshes/bluerov2.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/meshes/t200_ccw_prop.dae
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/bluerov2/BlueROV2.md
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/axes
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/axes/model.sdf
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/models/axes/model.config
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/worlds
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/worlds/bluerov2_underwater.world
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/worlds/bluerov2_heavy_underwater.world
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/ament_index/resource_index/package_run_dependencies/bluerov2_gz
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/ament_index/resource_index/parent_prefix_path/bluerov2_gz
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/environment/ament_prefix_path.sh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/environment/ament_prefix_path.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/environment/path.sh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/environment/path.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/local_setup.bash
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/local_setup.sh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/local_setup.zsh
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/local_setup.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.dsv
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/ament_index/resource_index/packages/bluerov2_gz
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/cmake/bluerov2_gzConfig.cmake
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/cmake/bluerov2_gzConfig-version.cmake
+-- Installing: /home/alejandro/cpr/colcon_ws/install/bluerov2_gz/share/bluerov2_gz/package.xml

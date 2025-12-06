@@ -1,0 +1,10 @@
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/uninstall.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/orca_shared_uninstall.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/orca_shared.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/test.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/edit_cache.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/rebuild_cache.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/list_install_components.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/install.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/install/local.dir
+/home/alejandro/cpr/colcon_ws/build/orca_shared/CMakeFiles/install/strip.dir

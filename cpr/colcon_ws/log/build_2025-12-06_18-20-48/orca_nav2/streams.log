@@ -1,0 +1,105 @@
+[0.080s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2 -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_nav2
+[0.404s] -- The C compiler identification is GNU 11.4.0
+[0.754s] -- The CXX compiler identification is GNU 11.4.0
+[0.805s] -- Detecting C compiler ABI info
+[1.106s] -- Detecting C compiler ABI info - done
+[1.142s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.145s] -- Detecting C compile features
+[1.147s] -- Detecting C compile features - done
+[1.157s] -- Detecting CXX compiler ABI info
+[1.413s] -- Detecting CXX compiler ABI info - done
+[1.450s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.452s] -- Detecting CXX compile features
+[1.456s] -- Detecting CXX compile features - done
+[1.465s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.990s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.669s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.691s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.726s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.778s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.846s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.480s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.507s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.041s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.208s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.448s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.521s] -- Looking for pthread.h
+[4.880s] -- Looking for pthread.h - found
+[4.881s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.202s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.208s] -- Found Threads: TRUE  
+[7.059s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[7.059s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[9.971s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.117s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/orca_nav2` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[10.136s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.142s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.150s] -- Configured cppcheck include dirs: /home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2/include
+[10.153s] -- Configured cppcheck exclude dirs and/or files: 
+[10.155s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.155s] -- Configured cpplint exclude dirs and/or files: 
+[10.158s] -- Added test 'lint_cmake' to check CMake code style
+[10.163s] -- Added test 'uncrustify' to check C / C++ code style
+[10.163s] -- Configured uncrustify additional arguments: 
+[10.173s] -- Added test 'xmllint' to check XML markup files
+[10.181s] -- Configuring done
+[11.600s] -- Generating done
+[11.808s] -- Build files have been written to: /home/alejandro/cpr/colcon_ws/build/orca_nav2
+[11.893s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/alejandro/cpr/colcon_ws/src/orca4/orca_nav2 -DCMAKE_INSTALL_PREFIX=/home/alejandro/cpr/colcon_ws/install/orca_nav2
+[11.894s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_nav2 -- -j8 -l8
+[12.171s] [ 12%] [32mBuilding CXX object CMakeFiles/pure_pursuit_controller_3d.dir/src/pure_pursuit_controller_3d.cpp.o[0m
+[35.066s] [ 25%] [32m[1mLinking CXX shared library libpure_pursuit_controller_3d.so[0m
+[36.015s] [ 25%] Built target pure_pursuit_controller_3d
+[36.077s] [ 37%] [32mBuilding CXX object CMakeFiles/straight_line_planner_3d.dir/src/straight_line_planner_3d.cpp.o[0m
+[46.935s] [ 50%] [32m[1mLinking CXX shared library libstraight_line_planner_3d.so[0m
+[47.527s] [ 50%] Built target straight_line_planner_3d
+[47.568s] [ 62%] [32mBuilding CXX object CMakeFiles/goal_checker_3d.dir/src/goal_checker_3d.cpp.o[0m
+[62.581s] [ 75%] [32m[1mLinking CXX shared library libgoal_checker_3d.so[0m
+[63.530s] [ 75%] Built target goal_checker_3d
+[63.573s] [ 87%] [32mBuilding CXX object CMakeFiles/progress_checker_3d.dir/src/progress_checker_3d.cpp.o[0m
+[72.525s] [100%] [32m[1mLinking CXX shared library libprogress_checker_3d.so[0m
+[73.556s] [100%] Built target progress_checker_3d
+[73.585s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/alejandro/cpr/colcon_ws/build/orca_nav2 -- -j8 -l8
+[73.590s] Invoking command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_nav2
+[73.610s] -- Install configuration: ""
+[73.611s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/pure_pursuit_controller_3d_plugin.xml
+[73.611s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/straight_line_planner_3d_plugin.xml
+[73.611s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/goal_checker_3d_plugin.xml
+[73.612s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/progress_checker_3d_plugin.xml
+[73.612s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/pure_pursuit_controller_3d_plugin.xml
+[73.613s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/straight_line_planner_3d_plugin.xml
+[73.613s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/goal_checker_3d_plugin.xml
+[73.613s] -- Up-to-date: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/progress_checker_3d_plugin.xml
+[73.613s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/include
+[73.614s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/include/orca_nav2
+[73.614s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/include/orca_nav2/param_macro.hpp
+[73.614s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/environment/library_path.sh
+[73.615s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/environment/library_path.dsv
+[73.615s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libpure_pursuit_controller_3d.so
+[73.616s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libpure_pursuit_controller_3d.so" to ""
+[73.616s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libstraight_line_planner_3d.so
+[73.617s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libstraight_line_planner_3d.so" to ""
+[73.618s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libgoal_checker_3d.so
+[73.619s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libgoal_checker_3d.so" to ""
+[73.619s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libprogress_checker_3d.so
+[73.620s] -- Set runtime path of "/home/alejandro/cpr/colcon_ws/install/orca_nav2/lib/libprogress_checker_3d.so" to ""
+[73.621s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/ament_index/resource_index/package_run_dependencies/orca_nav2
+[73.621s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/ament_index/resource_index/parent_prefix_path/orca_nav2
+[73.622s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/environment/ament_prefix_path.sh
+[73.622s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/environment/ament_prefix_path.dsv
+[73.622s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/environment/path.sh
+[73.623s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/environment/path.dsv
+[73.623s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/local_setup.bash
+[73.623s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/local_setup.sh
+[73.624s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/local_setup.zsh
+[73.624s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/local_setup.dsv
+[73.625s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.dsv
+[73.625s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/ament_index/resource_index/packages/orca_nav2
+[73.626s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/ament_index/resource_index/nav2_core__pluginlib__plugin/orca_nav2
+[73.626s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/cmake/ament_cmake_export_dependencies-extras.cmake
+[73.626s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/cmake/ament_cmake_export_include_directories-extras.cmake
+[73.627s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/cmake/ament_cmake_export_libraries-extras.cmake
+[73.627s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/cmake/orca_nav2Config.cmake
+[73.627s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/cmake/orca_nav2Config-version.cmake
+[73.628s] -- Installing: /home/alejandro/cpr/colcon_ws/install/orca_nav2/share/orca_nav2/package.xml
+[73.634s] Invoked command in '/home/alejandro/cpr/colcon_ws/build/orca_nav2' returned '0': AMENT_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared:/home/alejandro/cpr/colcon_ws/install/ros2_shared:/home/alejandro/cpr/colcon_ws/install/orca_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/alejandro/cpr/colcon_ws/install/orca_shared/lib:/home/alejandro/cpr/colcon_ws/install/orca_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/alejandro/cpr/colcon_ws/install/orca_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/alejandro/cpr/colcon_ws/build/orca_nav2

@@ -1,0 +1,3 @@
+source;share/orca_shared/environment/ament_prefix_path.sh
+source;share/orca_shared/environment/library_path.sh
+source;share/orca_shared/environment/path.sh

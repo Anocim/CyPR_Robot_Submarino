@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-24e7672762fbcefb9762.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "orca_base",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "base_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-base_controller-974b94c8a8636772eeb6.json",
+					"name" : "base_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "camera_info_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-camera_info_publisher-f66bf1fe5f40ca42c584.json",
+					"name" : "camera_info_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "manager::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-manager-e77a4324583bf10add7c.json",
+					"name" : "manager",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "orca_base_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orca_base_uninstall-395c37bb6d5a44917e56.json",
+					"name" : "orca_base_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4e5c5121ba93771ac9d0.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alejandro/cpr/colcon_ws/build/orca_base",
+		"source" : "/home/alejandro/cpr/colcon_ws/src/orca4/orca_base"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
