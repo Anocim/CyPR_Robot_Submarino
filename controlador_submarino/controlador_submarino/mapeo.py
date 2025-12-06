@@ -9,7 +9,7 @@ class MapeoMotores(Node):
         
         # Configuración QoS (Modo "Radio")
         qos_profile = QoSProfile(
-            reliability=ReliabilityPolicy.BEST_EFFORT,
+            reliability=ReliabilityPolicy.RELIABLE,
             durability=DurabilityPolicy.VOLATILE,
             history=HistoryPolicy.KEEP_LAST,
             depth=10
