@@ -27,6 +27,7 @@ setup(
         'console_scripts': [
             'cerebro = controlador_submarino.controlador:main',
             'mapeo = controlador_submarino.mapeo:main',
+            'angulos=controlador_submarino.angulos:main',
         ],
     },
 )

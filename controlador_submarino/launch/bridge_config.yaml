@@ -68,3 +68,35 @@
     durability: volatile
     history: keep_last
     depth: 10
+    
+- topic_name: "/model/orca4/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS  
+  qos:
+    reliability: reliable
+    durability: volatile
+    history: keep_last
+    depth: 10
+    
+# SENSOR DE PRESIÓN (Barómetro)
+- topic_name: "/world/sand/model/orca4/link/base_link/sensor/pressure_sensor/air_pressure"
+  ros_type_name: "sensor_msgs/msg/FluidPressure"
+  gz_type_name: "gz.msgs.FluidPressure"
+  direction: GZ_TO_ROS
+  qos:
+    reliability: reliable
+    durability: volatile
+    history: keep_last
+    depth: 10
+    
+# ALTÍMETRO (Lídar apuntando abajo)
+- topic_name: "/world/sand/model/orca4/link/altimeter_link/sensor/altimeter_sensor/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+  qos:
+    reliability: reliable
+    durability: volatile
+    history: keep_last
+    depth: 10
