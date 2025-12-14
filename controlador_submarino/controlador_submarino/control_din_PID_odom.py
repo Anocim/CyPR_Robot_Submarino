@@ -82,19 +82,17 @@ class AUVController(Node):
             
         # El eje 2 (Heave/Profundidad) es control de POSICIÓN (no velocidad), Kp y Ki dominan. 
         # Lo ajustamos manualmente (o con un diseño específico de 3er orden)
-        self.Kp[2] = 40.0
-        self.Kd[2] = 10.0
-        
+
         # Ganancias Integrales (Ki): Necesitan ser ajustadas empíricamente 
         # ya que compensan errores de estado estacionario y flotabilidad no compensados.
-        self.Ki = np.array([0.5, 0.5, 5.0, 0.1, 0.1, 0.5]) 
+        self.Ki = np.array([10., 10., 10., 1.1, 1.1, 0.5]) 
         
         # --- ESTADO Y ERROR INTEGRAL ---
         self.state_vel = np.zeros(6)
         self.target_vel = np.zeros(6)
 
         self.current_depth = 0.0
-        self.target_depth = 0.5
+        self.target_depth = 0.0
         
         self.current_phi = 0.0
         self.current_theta = 0.0
@@ -214,9 +212,9 @@ class AUVController(Node):
         error[0] = self.target_vel[0] - self.state_vel[0]
         error[1] = self.target_vel[1] - self.state_vel[1]
         error[2] = self.target_depth - self.current_depth 
-        error[3] = 0.0 - self.state_vel[3] 
-        error[4] = 0.0 - self.state_vel[4] 
-        error[5] = self.target_vel[5] - self.state_vel[5]
+        error[3] = 0.0 - self.current_phi
+        error[4] = 0.0 - self.current_theta 
+        error[5] = self.current_psi - self.current_psi 
 
         # 2. CÁLCULO DEL ERROR I (Integral)
         self.error_integral += error * self.dt
@@ -229,21 +227,23 @@ class AUVController(Node):
         tau_I = self.Ki * self.error_integral
         tau_D = - self.Kd * self.state_vel 
         
+        #tau_feedback = tau_P + tau_I + tau_D
         tau_feedback = tau_P + tau_I + tau_D
 
         # 4. FUERZA DE FEEDFORWARD (Compensación Dinámica)
-        tau_coriolis = self.calculate_coriolis_term(self.state_vel)
-        tau_damping = self.calculate_damping_term(self.state_vel)
+        tau_coriolis = self.calculate_coriolis_term(self.state_vel) #despreciable a baja velocidad y dificil de modelar
+        tau_damping = self.calculate_damping_term(self.state_vel) #despreciable y se compensa con el control derivativo
         tau_restoring = self.calculate_restoring_term()
 
-        tau_feedforward = tau_coriolis + tau_damping + tau_restoring
+        #tau_feedforward = tau_coriolis + tau_damping + tau_restoring
+        tau_feedforward = tau_restoring
         
         # 5. FUERZA DE CONTROL TOTAL
         tau_total = tau_feedback + tau_feedforward
         
         # 6. MIXER y Publicación
         motor_forces = self.T_inv @ tau_total
-        motor_forces = np.clip(motor_forces, -200.0, 200.0)
+        motor_forces = np.clip(motor_forces, -100.0, 100.0)
 
         for i in range(6):
             msg = Float64()

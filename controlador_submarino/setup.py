@@ -33,8 +33,9 @@ setup(
             'mover=controlador_submarino.mover:main',
             'controlador_dinamica=controlador_submarino.control_dinamica:main',
             'controlador_PID=controlador_submarino.controlador_PID:main',
-            'control_PID_din=controlador_submarino.control_din_PID:main',
-            'control_PID_din_odom=controlador_submarino.control_din_PID_odom:main',
+            'control_din_PID=controlador_submarino.control_din_PID:main',
+                               'control_din_PID_odom=controlador_submarino.control_din_PID_odom:main',
+                        'control_din_PID_odom_cambio=controlador_submarino.control_din_PID_odom_cambio:main',
         ],
     },
 )
