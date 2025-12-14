@@ -28,6 +28,13 @@ setup(
             'cerebro = controlador_submarino.controlador:main',
             'mapeo = controlador_submarino.mapeo:main',
             'angulos=controlador_submarino.angulos:main',
+            'controlador_curro=controlador_submarino.controlador_curro:main',
+            'controlador_edu=controlador_submarino.controlador2:main',
+            'mover=controlador_submarino.mover:main',
+            'controlador_dinamica=controlador_submarino.control_dinamica:main',
+            'controlador_PID=controlador_submarino.controlador_PID:main',
+            'control_PID_din=controlador_submarino.control_din_PID:main',
+            'control_PID_din_odom=controlador_submarino.control_din_PID_odom:main',
         ],
     },
 )
