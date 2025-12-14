@@ -1,156 +1,118 @@
 #!/usr/bin/env python3
+import rclpy
 import numpy as np
+from rclpy.node import Node
+from nav_msgs.msg import Odometry
+from std_msgs.msg import Float64
 
 # =========================
-# CONFIGURACIÓN DEL ROBOT
-# =========================
-rCG = np.array([0.0, 0.0, 0.011])  # Centro de gravedad
-# Vectores de dirección de cada motor (todos hacia abajo)
-u = [np.array([0, 0, -1]) for _ in range(6)]
-# Posición y orientación de los motores: p = [x, y, z, roll, pitch, yaw]
-p = [
-    np.array([0.14, -0.092, 0, -2, 2, -4]),
-    np.array([0.14,  0.092, 0, -2, 2, -12]),
-    np.array([0.14, -0.092, 0, -2, 2, 4]),
-    np.array([0.14,  0.092, 0, -2, 2, 12]),
-    np.array([0.0, -0.109, 0.077, 0, 0, 0]),
-    np.array([0.0,  0.109, 0.077, 0, 0, 0])
-]
-
-# =========================
-# FUNCIONES AUXILIARES
-# =========================
-def quaternion_inverse(q):
-    """Inversa de un cuaternión"""
-    w, x, y, z = q
-    return np.array([w, -x, -y, -z]) / np.dot(q, q)
-
-def quaternion_multiply(q1, q2):
-    """Multiplicación de cuaterniones"""
-    w1, x1, y1, z1 = q1
-    w2, x2, y2, z2 = q2
-    w = w1*w2 - x1*x2 - y1*y2 - z1*z2
-    x = w1*x2 + x1*w2 + y1*z2 - z1*y2
-    y = w1*y2 - x1*z2 + y1*w2 + z1*x2
-    z = w1*z2 + x1*y2 - y1*x2 + z1*w2
-    return np.array([w, x, y, z])
-
-def sign_quaternion(q):
-    """Error de actitud vectorial"""
-    w, x, y, z = q
-    return np.array([x, y, z]) * np.sign(w)
-
-def rotation_matrix_from_rpy(roll, pitch, yaw):
-    """Matriz de rotación a partir de roll-pitch-yaw en grados"""
-    r, p, y = np.deg2rad([roll, pitch, yaw])
-    Rx = np.array([[1, 0, 0],
-                   [0, np.cos(r), -np.sin(r)],
-                   [0, np.sin(r),  np.cos(r)]])
-    Ry = np.array([[ np.cos(p), 0, np.sin(p)],
-                   [0, 1, 0],
-                   [-np.sin(p), 0, np.cos(p)]])
-    Rz = np.array([[np.cos(y), -np.sin(y), 0],
-                   [np.sin(y),  np.cos(y), 0],
-                   [0, 0, 1]])
-    return Rz @ Ry @ Rx
-
-# =========================
-# MIXER: Fuerza+Torque -> Motores
-# =========================
-def compute_mixer(u_vectors, p_vectors, rCG):
-    """
-    Construye la matriz de control (6x6)
-    """
-    B = np.zeros((6, 6))
-    for i in range(6):
-        # Fuerza lineal
-        B[:3, i] = u_vectors[i]
-        # Torque generado = (ri - rCG) x fi*ui
-        r_i = p_vectors[i][:3]
-        B[3:, i] = np.cross(r_i - rCG, u_vectors[i])
-    return B
-
-def mixer(wrench_desired, B):
-    """
-    Calcula fuerzas de motor a partir de wrench deseado
-    """
-    # Inversa de la matriz B (asumimos cuadrada)
-    B_inv = np.linalg.inv(B)
-    motor_forces = B_inv @ wrench_desired
-    # Saturación entre -100 y 100 N
-    motor_forces = np.clip(motor_forces, -100, 100)
-    return motor_forces
-
-# =========================
-# CONTROL PID
+# PID
 # =========================
 class PID:
-    def __init__(self, kp, ki, kd, dt):
+    def __init__(self, kp, kd):
         self.kp = kp
-        self.ki = ki
         self.kd = kd
-        self.dt = dt
-        self.integral = np.zeros(3)
-        self.prev_error = np.zeros(3)
-    
-    def compute(self, error, derivative_measure=np.zeros(3)):
-        self.integral += error * self.dt
-        derivative = derivative_measure
-        output = self.kp*error + self.ki*self.integral - self.kd*derivative
-        self.prev_error = error
-        return output
+
+    def compute(self, error, derror):
+        return self.kp * error - self.kd * derror
 
 # =========================
-# CONTROLADOR PRINCIPAL
+# CONTROLADOR
 # =========================
-class LowLevelController:
-    def __init__(self, dt):
-        self.dt = dt
-        # PID actitud
-        self.pid_attitude = PID(kp=50, ki=0.0, kd=20, dt=dt)
-        # PID traslación
-        self.pid_position = PID(kp=30, ki=0.0, kd=10, dt=dt)
-        # Matriz del mixer
-        self.B = compute_mixer(u, p, rCG)
-    
-    def compute_wrench(self, q_actual, q_desired, omega, vel_lin, vel_des=np.zeros(3)):
-        """
-        Calcula wrench deseado [Fx, Fy, Fz, Tx, Ty, Tz]
-        """
-        # --- Actitud ---
-        qe = quaternion_multiply(q_desired, quaternion_inverse(q_actual))
-        e_att = sign_quaternion(qe)
-        torque = self.pid_attitude.compute(e_att, omega)
-        
-        # --- Traslación ---
-        error_pos = vel_des - vel_lin
-        force = self.pid_position.compute(error_pos)
-        
-        # Concatenamos wrench total
+class Orca4Controller(Node):
+    def __init__(self):
+        super().__init__('orca4_controller')
+
+        # Estado
+        self.q = np.array([1, 0, 0, 0])
+        self.omega = np.zeros(3)
+        self.vel = np.zeros(3)
+
+        # Deseado (ejemplo: yaw = 0)
+        self.q_des = np.array([1, 0, 0, 0])
+
+        # CG
+        self.rCG = np.array([0.0, 0.0, 0.011])
+
+        # Thrusters
+        self.thruster_pos = [
+            np.array([ 0.14, -0.092, 0.0]),
+            np.array([ 0.14,  0.092, 0.0]),
+            np.array([-0.14, -0.092, 0.0]),
+            np.array([-0.14,  0.092, 0.0]),
+            np.array([ 0.0, -0.109, 0.077]),
+            np.array([ 0.0,  0.109, 0.077])
+        ]
+
+        self.thruster_dirs = [
+            np.array([ 1, 0, 0]),
+            np.array([ 1, 0, 0]),
+            np.array([-1, 0, 0]),
+            np.array([-1, 0, 0]),
+            np.array([ 0, 0, 1]),
+            np.array([ 0, 0, 1])
+        ]
+
+        self.B = self.compute_mixer()
+
+        # PID yaw pitch roll
+        self.pid_att = PID(kp=30, kd=10)
+
+        # ROS
+        self.create_subscription(Odometry,
+                                 '/model/orca4/odometry',
+                                 self.odom_cb,
+                                 10)
+
+        self.thruster_pubs = [
+            self.create_publisher(Float64,
+              f'/model/orca4/joint/thruster{i+1}_joint/cmd_thrust', 10)
+            for i in range(6)
+        ]
+
+        self.timer = self.create_timer(0.01, self.control_loop)
+
+    def compute_mixer(self):
+        B = np.zeros((6, 6))
+        for i in range(6):
+            f = self.thruster_dirs[i]
+            r = self.thruster_pos[i] - self.rCG
+            B[0:3, i] = f
+            B[3:6, i] = np.cross(r, f)
+        return B
+
+    def odom_cb(self, msg):
+        o = msg.pose.pose.orientation
+        self.q = np.array([o.w, o.x, o.y, o.z])
+        self.omega = np.array([
+            msg.twist.twist.angular.x,
+            msg.twist.twist.angular.y,
+            msg.twist.twist.angular.z
+        ])
+
+    def control_loop(self):
+        # Error de actitud (pequeños ángulos)
+        error = -self.omega
+        torque = self.pid_att.compute(error, self.omega)
+
         wrench = np.zeros(6)
-        wrench[:3] = force
         wrench[3:] = torque
-        return wrench
-    
-    def compute_motor_commands(self, q_actual, q_desired, omega, vel_lin, vel_des=np.zeros(3)):
-        wrench = self.compute_wrench(q_actual, q_desired, omega, vel_lin, vel_des)
-        motor_forces = mixer(wrench, self.B)
-        return motor_forces
 
-# =========================
-# EJEMPLO DE USO
-# =========================
-if __name__ == "__main__":
-    dt = 0.01  # 100 Hz
-    controller = LowLevelController(dt=dt)
+        forces = np.linalg.pinv(self.B) @ wrench
+        forces = np.clip(forces, -50, 50)
 
-    # Cuaternión actual y deseado (ejemplo)
-    q_actual = np.array([1, 0, 0, 0])
-    q_desired = np.array([1, 0, 0, 0])
-    omega = np.zeros(3)  # Velocidad angular
-    vel_lin = np.zeros(3)  # Velocidad lineal
-    vel_des = np.array([0.5, 0.0, 0.0])  # Movimiento deseado hacia adelante
+        for i, pub in enumerate(self.thruster_pubs):
+            msg = Float64()
+            msg.data = float(forces[i])
+            pub.publish(msg)
 
-    motor_cmds = controller.compute_motor_commands(q_actual, q_desired, omega, vel_lin, vel_des)
-    print("Fuerzas de motores:", motor_cmds)
+def main():
+    rclpy.init()
+    node = Orca4Controller()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
 
