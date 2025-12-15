@@ -7,7 +7,7 @@ from std_msgs.msg import Float64
 from sensor_msgs.msg import FluidPressure, Imu
 
 from tf_transformations import euler_from_quaternion
-from tf_transformations import euler_from_quaternion, quaternion_inverse, quaternion_multiply
+from tf_transformations import euler_from_quaternion, quaternion_inverse, quaternion_multiply,quaternion_from_euler
 
 import numpy as np
 import math
@@ -25,6 +25,7 @@ class AUVController(Node):
            durability=DurabilityPolicy.VOLATILE,
            history=HistoryPolicy.KEEP_LAST,
            depth=10
+
         )
 
         # --- PARÁMETROS FÍSICOS (DINÁMICA) ---
@@ -73,6 +74,8 @@ class AUVController(Node):
         self.Kp = np.zeros(6)
         self.Kd = np.zeros(6)
         
+        self.create_subscription(Float64, '/target_depth', self.depth_target_callback, 10)
+        self.create_subscription(Twist, '/target_orientation_euler', self.orientation_target_callback, 10)
         for i in range(6):
             # Asignación de Polos para un sistema de 2do orden:
             # Kp = M_ii * wn^2
@@ -83,16 +86,19 @@ class AUVController(Node):
             
         # El eje 2 (Heave/Profundidad) es control de POSICIÓN (no velocidad), Kp y Ki dominan. 
         # Lo ajustamos manualmente (o con un diseño específico de 3er orden)
-        self.Kp[0]=0.0
-        self.Kd[0]=0.0
-        self.Kp[1]=0.0
-        self.Kd[1]=0.0
         
-        self.Kp[3]=self.Kp[3]*4
-        self.Kp[4]=self.Kp[4]*4
+        self.Kp[0]=self.Kp[4]/2
+        self.Kp[1]=self.Kp[4]/2
+        self.Kd[0]=self.Kd[4]/4
+        self.Kd[1]=self.Kd[4]/4     
+        
+        self.Kp[3]=self.Kp[4]*10
+        self.Kp[4]=self.Kp[4]*10
         self.Kp[5]=self.Kp[5]
         
-        self.Kd[5]=0.0
+        self.Kd[3]=self.Kd[4]*2
+        self.Kd[4]=self.Kd[4]*2
+        self.Kd[5]=0.5
 
         # Ganancias Integrales (Ki): Necesitan ser ajustadas empíricamente 
         # ya que compensan errores de estado estacionario y flotabilidad no compensados.
@@ -104,7 +110,7 @@ class AUVController(Node):
         self.target_vel = np.zeros(6)
 
         self.current_depth = 0.0
-        self.target_depth = -6.0
+        self.target_depth = 0.0
         
         self.current_phi = 0.0
         self.current_theta = 0.0
@@ -149,6 +155,27 @@ class AUVController(Node):
     # --- FUNCIONES DINÁMICAS (sin cambios) ---
     # --------------------------------------------------
 
+    def depth_target_callback(self, msg):
+        self.target_depth = msg.data
+        # Aseguramos que la referencia de velocidad vertical (heave) sea 0 para que el 
+        # controlador de posición/profundidad (tau_P, tau_I) tome el control.
+
+    # NUEVA FUNCIÓN: Manejar la referencia de Orientación (Roll, Pitch, Yaw)
+    def orientation_target_callback(self, msg):
+        # Los campos angular.x, .y, .z se usan para mandar los ángulos de Euler deseados
+        roll_d = msg.angular.x
+        pitch_d = msg.angular.y
+        yaw_d = msg.angular.z
+        
+        # Convertir los ángulos de Euler deseados al Cuaternión deseado para el control
+        q_d = quaternion_from_euler(roll_d, pitch_d, yaw_d)
+        
+        # q_d es (x, y, z, w). Actualizar el setpoint de cuaternión.
+        self.q_desired = np.array(q_d)
+
+        # Opcional: Si necesitas el control del Yaw con velocidad angular:
+        # self.target_vel[5] = msg.angular.z
+        
     def cmd_callback(self, msg):
         self.target_vel[0] = msg.linear.x
         self.target_vel[1] = msg.linear.y
@@ -227,8 +254,8 @@ class AUVController(Node):
         
         # 1. CÁLCULO DEL ERROR P (Feedback)
         error = np.zeros(6)
-        error[0] = 0.0 - self.state_vel[0]
-        error[1] = 0.0 - self.state_vel[1]
+        error[0] = self.target_vel[0] - self.state_vel[0]
+        error[1] = self.target_vel[1] - self.state_vel[1]
         error[2] = self.target_depth - self.current_depth
 
         q_current_inv = quaternion_inverse(self.q_current)
