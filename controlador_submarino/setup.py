@@ -1,4 +1,6 @@
+import os
 from setuptools import find_packages, setup
+from glob import glob
 
 package_name = 'controlador_submarino'
 
@@ -10,7 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/launch', ['launch/bridge.launch.py', 'launch/bridge_config.yaml']),
+        
+        (os.path.join('share', package_name, 'launch'), glob('launch/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -34,8 +37,9 @@ setup(
             'controlador_dinamica=controlador_submarino.control_dinamica:main',
             'controlador_PID=controlador_submarino.controlador_PID:main',
             'control_din_PID=controlador_submarino.control_din_PID:main',
-                               'control_din_PID_odom=controlador_submarino.control_din_PID_odom:main',
-                        'control_din_PID_odom_cambio=controlador_submarino.control_din_PID_odom_cambio:main',
+            'control_din_PID_odom=controlador_submarino.control_din_PID_odom:main',
+            'control_din_PID_odom_cambio=controlador_submarino.control_din_PID_odom_cambio:main',
+            'cambio_ref=controlador_submarino.cambio_ref:main',
         ],
     },
 )
