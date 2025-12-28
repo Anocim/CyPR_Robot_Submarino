@@ -40,6 +40,7 @@ setup(
             'control_din_PID_odom=controlador_submarino.control_din_PID_odom:main',
             'control_din_PID_odom_cambio=controlador_submarino.control_din_PID_odom_cambio:main',
             'cambio_ref=controlador_submarino.cambio_ref:main',
+            'control_sdre=controlador_submarino.control_sdre:main',
         ],
     },
 )

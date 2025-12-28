@@ -31,7 +31,7 @@ def generate_launch_description():
     # "executable" debe coincidir con el nombre que pusiste en setup.py (entry_points)
     controlador = Node(
         package='controlador_submarino',
-        executable='control_din_PID_odom_cambio', # <--- Asegúrate que este nombre está en setup.py
+        executable='control_sdre', # <--- Asegúrate que este nombre está en setup.py
         name='controlador_pid_dinamico',
         output='screen'
     )
