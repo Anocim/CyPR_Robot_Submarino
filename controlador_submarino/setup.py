@@ -42,6 +42,7 @@ setup(
             'cambio_ref=controlador_submarino.cambio_ref:main',
             'control_sdre=controlador_submarino.control_sdre:main',
             'cambio_pos=controlador_submarino.cambio_pos:main',
+            'control_punto_punto=controlador_submarino.control_punto_punto:main',
         ],
     },
 )

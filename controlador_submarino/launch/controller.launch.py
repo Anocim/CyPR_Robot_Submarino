@@ -12,8 +12,6 @@ def generate_launch_description():
     pkg_propio = get_package_share_directory('controlador_submarino')
 
     # 2. INCLUIR LA SIMULACIÓN (Mundo y Robot)
-    # Nota: He corregido 'sim_laun.py' a 'sim_launch.py' que suele ser el nombre correcto.
-    # Si tu archivo se llama realmente 'sim_laun.py', cámbialo abajo.
     simulacion = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_orca, 'launch', 'sim_launch.py')
@@ -31,7 +29,7 @@ def generate_launch_description():
     # "executable" debe coincidir con el nombre que pusiste en setup.py (entry_points)
     controlador = Node(
         package='controlador_submarino',
-        executable='control_sdre', # <--- Asegúrate que este nombre está en setup.py
+        executable='control_sdre', 
         name='controlador_pid_dinamico',
         output='screen'
     )
@@ -39,7 +37,7 @@ def generate_launch_description():
     # 5. NODO REFERENCIA (Tu generador de cambios)
     referencia = Node(
         package='controlador_submarino',
-        executable='cambio_ref', # <--- Asegúrate que este nombre está en setup.py
+        executable='control_punto_punto', 
         name='referencia_cambio',
         output='screen'
     )
