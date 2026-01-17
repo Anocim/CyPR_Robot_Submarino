@@ -1,21 +1,6 @@
 🐋 Guía de Instalación ORCA4
 Esta guía detalla paso a paso el proceso para configurar el entorno de simulación para el robot submarino ORCA4, incluyendo ArduSub, Gazebo y ROS 2.
 
-📋 Tabla de Contenidos
-Repositorios y Gazebo
-
-Compilación de ArduSub
-
-Dependencias del Sistema
-
-Preparación del Workspace
-
-Dependencias ROS y MAVROS
-
-Compilación Final
-
-Ejecución
-
 Paso 1: Añadir Repositorios Adicionales (APT) 📦
 Configuración de las llaves de seguridad de OSRF e instalación de Gazebo Harmonic.
 
@@ -128,4 +113,6 @@ Bash
 
 ros2 launch orca_bringup sim_launch.py
 
-🎉 Resultado: Se debería abrir la plataforma de simulación en Gazebo mostrando el robot submarino en el entorno acuático.
+Resultado: Se debería abrir la plataforma de simulación en Gazebo mostrando el robot submarino en el entorno acuático.
+
+Para poder desvincular el puente MAVROS y el control a bajo nivel ArduSub es necesario modificar los archivos en la carpeta "Archivos modificados"
