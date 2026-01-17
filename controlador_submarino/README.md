@@ -8,4 +8,4 @@ Si se desea cambiar de controlador, entre a la carpeta de controlador_submarino 
 
 Una vez decida que controlador y que alto nivel se quiere implementar, entre a la carpeta launch y siga los pasos establecidos. 
 
-Recuerde hacer un catkin_make cada vez que modifique algo.
+Recuerde hacer un colcon build cada vez que modifique algo.
