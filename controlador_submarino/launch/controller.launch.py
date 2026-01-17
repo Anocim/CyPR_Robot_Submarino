@@ -18,27 +18,26 @@ def generate_launch_description():
         )
     )
 
-    # 3. INCLUIR EL PUENTE (Bridge)
+    # 3. BRIDGE
     puente = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_propio, 'launch', 'bridge.launch.py')
         )
     )
 
-    # 4. NODO CONTROLADOR (Tu PID)
-    # "executable" debe coincidir con el nombre que pusiste en setup.py (entry_points)
+    # 4. NODO CONTROLADOR
     controlador = Node(
         package='controlador_submarino',
-        executable='control_sdre_perturbaciones', 
-        name='controlador_pid_dinamico',
+        executable='control_sdre_perturbaciones', #<--- Cargar el controlador elegido
+        name='controlador',
         output='screen'
     )
 
-    # 5. NODO REFERENCIA (Tu generador de cambios)
+    # 5. NODO REFERENCIA (
     referencia = Node(
         package='controlador_submarino',
-        executable='control_punto_punto', 
-        name='referencia_cambio',
+        executable='control_punto_punto', #<--- Cargar la referencia elegida
+        name='referencia',
         output='screen'
     )
 
