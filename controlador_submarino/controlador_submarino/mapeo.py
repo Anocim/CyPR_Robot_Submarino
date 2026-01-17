@@ -36,10 +36,10 @@ class MapeoMotores(Node):
         self.fase = 0 # 0=Encender, 1=Apagar
         
         # DOS TEMPORIZADORES:
-        # 1. El "Director": Cambia de motor cada 4 segundos
+        # 1. Cambio de motor cada 4 segundos
         self.timer_logica = self.create_timer(4.0, self.cambiar_motor)
         
-        # 2. El "Obrero": Manda la fuerza constantemente (20 veces por segundo)
+        # 2. Manda la fuerza constantemente (20 veces por segundo)
         self.timer_bucle = self.create_timer(0.05, self.enviar_fuerza)
 
     def cambiar_motor(self):
@@ -63,17 +63,14 @@ class MapeoMotores(Node):
         """Este método se ejecuta muy rápido (20Hz) para mantener el motor vivo."""
         msg = Float64()
         
-        # Si ya hemos terminado, no hacemos nada (o mandamos 0)
         if self.motor_actual >= 6:
             msg.data = 0.0
             return
 
         if self.fase == 1:
-            # Estamos en fase de ENCENDIDO: Mandamos fuerza constante
-            msg.data = 200.0  # <--- FUERZA REALISTA (No 500)
+            msg.data = 200.0 
             self.pubs[self.motor_actual].publish(msg)
         else:
-            # Estamos en fase de APAGADO: Mandamos ceros a todos
             self.stop_all()
 
     def stop_all(self):

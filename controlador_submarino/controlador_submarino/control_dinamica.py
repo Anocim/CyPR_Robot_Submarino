@@ -131,7 +131,6 @@ class AUVController(Node):
         g_eta = np.zeros(6)
 
         # Fuerza en Z (Heave): W - B
-        # Se usa el valor que resulta en -0.3 N, como se extrajo del documento
         g_eta[2] = -(W - B) 
 
         # Torques de Roll (K), Pitch (M) y Yaw (N)
@@ -174,10 +173,6 @@ class AUVController(Node):
 
         # Posición (profundidad, Z en marco NED)
         self.current_depth = msg.pose.pose.position.z
-        
-        # NOTA: Para un cálculo de g(eta) más preciso, aquí se convertirían 
-        # los cuaterniones (msg.pose.pose.orientation) a ángulos de Euler (phi, theta)
-        # y se guardarían en self.current_phi y self.current_theta.
 
     def control_loop(self):
         """Bucle de control principal (PD + Feedforward dinámico)"""

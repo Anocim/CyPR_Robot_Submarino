@@ -49,7 +49,7 @@ class TeleopFullSetpoint(Node):
         self.get_logger().info("ESPACIO para resetear todas las referencias a cero.")
         self.get_logger().info("CTRL+C para salir.")
         
-        self.publish_setpoints() # Publicar referencias iniciales
+        self.publish_setpoints() 
 
         self.read_keyboard()
 

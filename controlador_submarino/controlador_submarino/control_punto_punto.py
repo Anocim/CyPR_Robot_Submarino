@@ -9,18 +9,15 @@ class NodoGuiado(Node):
     def __init__(self):
         super().__init__('referencia_cambio')
 
-        # --- 1. PUBLICADORES (Hacia control_sdre) ---
-        # Enviamos velocidad (X, Y)
+        # --- 1. PUBLICADORES ---
         self.pub_vel = self.create_publisher(Twist, '/cmd_vel', 10)
         # Enviamos profundidad (Z)
         self.pub_depth = self.create_publisher(Float64, '/target_depth', 10)
         
         # --- 2. SUSCRIPTORES (Desde el simulador) ---
-        # Necesitamos saber dónde está el robot para saber cuándo llegamos
         self.create_subscription(Odometry, '/model/orca4/odometry', self.odom_callback, 10)
 
         # --- 3. CONFIGURACIÓN DE LA MISIÓN ---
-        # Lista de puntos (X, Y)
         self.waypoints = [
             (10.0, 10.0), 
             (20.0, 10.0), 
@@ -89,12 +86,10 @@ class NodoGuiado(Node):
                     self.fase = "ASCENSO"
             else:
                 # CONTROLADOR P (Proporcional) SIMPLE PARA VELOCIDAD
-                # "Si estoy lejos, voy rápido. Si estoy cerca, freno."
                 kp = 0.5 
                 vel_x = error_x * kp
                 vel_y = error_y * kp
                 
-                # Limitamos la velocidad máxima (Saturación) para que no se vuelva loco
                 vel_max = 1.5
                 vel_x = max(min(vel_x, vel_max), -vel_max)
                 vel_y = max(min(vel_y, vel_max), -vel_max)
@@ -103,7 +98,6 @@ class NodoGuiado(Node):
                 msg_vel.linear.y = vel_y
 
         elif self.fase == "ASCENSO":
-            # Objetivo: Subir a 0m, quietos en X,Y
             msg_depth.data = 0.0 # Superficie
             msg_vel.linear.x = 0.0
             msg_vel.linear.y = 0.0

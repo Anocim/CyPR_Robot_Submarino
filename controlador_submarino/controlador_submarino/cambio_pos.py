@@ -9,7 +9,6 @@ class PositionSetpointNode(Node):
         super().__init__('position_setpoint_bridge')
         
         # --- SUSCRIPTORES ---
-        # Escuchamos la Pose completa (X, Y, Z, R, P, Y)
         self.subscription = self.create_subscription(
             Pose,
             '/sub_target_pose',

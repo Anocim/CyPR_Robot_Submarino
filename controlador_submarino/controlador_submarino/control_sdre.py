@@ -32,7 +32,7 @@ class AUVController(Node):
         )
 
         # --- PARÁMETROS FÍSICOS (DINÁMICA) ---
-        # Masa e Inercias (incluye inercia de masa añadida si el modelo fuera completo)
+        # Masa e Inercias 
         self.m = 10.0
         self.Ixx = 0.09873097998042396
         self.Iyy = 0.17756847998042397
@@ -62,7 +62,7 @@ class AUVController(Node):
         # --- PARÁMETROS DEL CONTROLADOR PID ---
         self.dt = 0.05 
         
-        # 1. Parámetros de Inercia Mii (Solo cuerpo rígido, falta masa añadida)
+        # 1. Parámetros de Inercia Mii 
         # Asumiendo que M_total = M_rigida + M_añadida
         # Aquí, usaremos la masa rígida (m=10) o la inercia (Izz) como aproximación
         M_ii = np.array([self.m, self.m, self.m, self.Ixx, self.Iyy, self.Izz])
@@ -97,11 +97,11 @@ class AUVController(Node):
         self.current_phi = 0.0
         self.current_theta = 0.0
         self.current_psi = 0.0
-# Cuaternión Deseado (Horizontal: Roll, Pitch, Yaw = 0)
-# (x, y, z, w)
+        # Cuaternión Deseado (Horizontal: Roll, Pitch, Yaw = 0)
+        # (x, y, z, w)
         self.q_desired = np.array([0.0, 0.0, 0.0, 1.0]) 
 
-# Cuaternión Actual (para control)
+        # Cuaternión Actual (para control)
         self.q_current = np.array([0.0, 0.0, 0.0, 1.0])
         self.error_integral = np.zeros(6)
 
@@ -130,15 +130,12 @@ class AUVController(Node):
 
 
     # --------------------------------------------------
-    # --- FUNCIONES DINÁMICAS (sin cambios) ---
+    # --- FUNCIONES DINÁMICAS ---
     # --------------------------------------------------
 
     def depth_target_callback(self, msg):
         self.target_depth = msg.data
-        # Aseguramos que la referencia de velocidad vertical (heave) sea 0 para que el 
-        # controlador de posición/profundidad (tau_P, tau_I) tome el control.
 
-    # NUEVA FUNCIÓN: Manejar la referencia de Orientación (Roll, Pitch, Yaw)
     def orientation_target_callback(self, msg):
         # Los campos angular.x, .y, .z se usan para mandar los ángulos de Euler deseados
         roll_d = msg.angular.x
@@ -150,9 +147,6 @@ class AUVController(Node):
         
         # q_d es (x, y, z, w). Actualizar el setpoint de cuaternión.
         self.q_desired = np.array(q_d)
-
-        # Opcional: Si necesitas el control del Yaw con velocidad angular:
-        # self.target_vel[5] = msg.angular.z
         
     def cmd_callback(self, msg):
         self.target_vel[0] = msg.linear.x
@@ -225,7 +219,7 @@ class AUVController(Node):
 
 
     # --------------------------------------------------
-    # --- BUCLE PRINCIPAL (sin cambios en la lógica PID/FF) ---
+    # --- BUCLE PRINCIPAL ---
     # --------------------------------------------------
 
     def control_loop(self):
@@ -239,7 +233,6 @@ class AUVController(Node):
         q_current_inv = quaternion_inverse(self.q_current)
         q_error = quaternion_multiply(self.q_desired, q_current_inv)
         
-        # c) Extraer el vector de error (e) de la parte imaginaria, con signo de la parte real (w_e)
         w_e = q_error[3]  # Componente w (real)
         x_y_z_e = np.array(q_error[0:3]) # Componentes x, y, z (vectoriales)
         
@@ -249,7 +242,7 @@ class AUVController(Node):
         else:
                 error_vector_angular = x_y_z_e
 
-# Asignar el error vectorial (Roll, Pitch, Yaw)
+        # Asignar el error vectorial (Roll, Pitch, Yaw)
         error[3] = error_vector_angular[0] # Roll (phi)
         error[4] = error_vector_angular[1] # Pitch (theta)
         error[5] = error_vector_angular[2] # Yaw (psi)
@@ -259,7 +252,6 @@ class AUVController(Node):
         I_limit = 10.0
         self.error_integral = np.clip(self.error_integral, -I_limit, I_limit)
         
-        # use error as state for feedback (6 elements) so shapes match `self.K` (6x6)
         Kp_pos = np.array([1.0, 1.0, 1.5, 1.0, 1.0, 1.0])
 
         nu_ref = np.zeros(6)
@@ -278,27 +270,16 @@ class AUVController(Node):
             self.K = np.linalg.inv(self.R) @ B.T @ self.P
 
 
-        # 3. FUERZA DE FEEDBACK (PID)
-        #tau_P = self.Kp * error
-        #tau_I = self.Ki * self.error_integral
-        #tau_D = - self.Kd * self.state_vel
-
-        #tau_feedback = tau_P + tau_I + tau_D
-        #tau_feedback = tau_P + tau_D + tau_I
+        # 3. SDRE
         tau_feedback = - self.K @ x
 
-        # 4. FUERZA DE FEEDFORWARD (Compensación Dinámica)
-        tau_coriolis = self.calculate_coriolis_term(self.state_vel) #despreciable a baja velocidad y dificil de modelar
-        tau_damping = self.calculate_damping_term(self.state_vel) #despreciable y se compensa con el control derivativo
+        # 4. FUERZA DE FEEDFORWARD 
         tau_restoring = self.calculate_restoring_term()
 
-        #tau_feedforward = tau_coriolis + tau_damping + tau_restoring
         tau_feedforward = tau_restoring
         
         # 5. FUERZA DE CONTROL TOTAL
         tau_total = tau_feedback + tau_feedforward
-        
-
         
         # 6. MIXER y Publicación
         motor_forces = self.T_inv @ tau_total

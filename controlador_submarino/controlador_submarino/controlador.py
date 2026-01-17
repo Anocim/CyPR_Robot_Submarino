@@ -147,21 +147,17 @@ class LowLevelController(Node):
         ])
 
         # ---------- ERROR DE ACTITUD ----------
-        # Aproximación lineal usando solo parte vectorial del cuaternión
         w, x, y, z = self.q
         e = np.sign(w) * np.array([x, y, z])
 
         # ---------- CONTROL PD ----------
-        # Torque deseado: proporcional al error y derivativo a la velocidad angular
         torque = self.Kp @ e - self.Kd @ self.omega
 
         # ---------- WRENCH DESEADO ----------
-        # Vector 6D: [Fx, Fy, Fz, Tx, Ty, Tz]
         wrench = np.zeros(6)
         wrench[3:] = torque  # solo se controla torque angular
 
         # ---------- INVERSA PARA MOTORES ----------
-        # Calcula fuerza de cada motor a partir de la matriz de asignación
         thruster_forces = np.linalg.pinv(self.B) @ wrench
 
         # Normalización entre [-1, 1] considerando 100 N como máximo

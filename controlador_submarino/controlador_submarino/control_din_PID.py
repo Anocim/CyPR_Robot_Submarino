@@ -14,7 +14,7 @@ class AUVController(Node):
         super().__init__('control_dinamica_pid_auv')
 
         # --- PARÁMETROS FÍSICOS (DINÁMICA) ---
-        # Masa e Inercias (incluye inercia de masa añadida si el modelo fuera completo)
+        # Masa e Inercias 
         self.m = 10.0
         self.Ixx = 0.09873097998042396
         self.Iyy = 0.17756847998042397
@@ -67,13 +67,11 @@ class AUVController(Node):
             self.Kp[i] = M_ii[i] * (self.wn ** 2)
             self.Kd[i] = M_ii[i] * 2.0 * self.zeta * self.wn
             
-        # El eje 2 (Heave/Profundidad) es control de POSICIÓN (no velocidad), Kp y Ki dominan. 
-        # Lo ajustamos manualmente (o con un diseño específico de 3er orden)
+        # El eje 2 (Heave/Profundidad) es control de POSICIÓN (no velocidad), Kp y Ki domina
         self.Kp[2] = 40.0
         self.Kd[2] = 10.0
         
-        # Ganancias Integrales (Ki): Necesitan ser ajustadas empíricamente 
-        # ya que compensan errores de estado estacionario y flotabilidad no compensados.
+        # Ganancias Integrales (Ki)
         self.Ki = np.array([0.5, 0.5, 5.0, 0.1, 0.1, 0.5]) 
         
         # --- ESTADO Y ERROR INTEGRAL ---
@@ -170,7 +168,7 @@ class AUVController(Node):
 
 
     # --------------------------------------------------
-    # --- BUCLE PRINCIPAL (sin cambios en la lógica PID/FF) ---
+    # --- BUCLE PRINCIPAL---
     # --------------------------------------------------
 
     def cmd_callback(self, msg):

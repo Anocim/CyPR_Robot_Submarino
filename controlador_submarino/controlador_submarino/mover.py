@@ -7,7 +7,7 @@ class MoverHaciaDelante(Node):
     def __init__(self):
         super().__init__('mover_adelante')
         
-        # --- QoS (Igual que en el mapeo) ---
+        # --- QoS ---
         qos_profile = QoSProfile(
             reliability=ReliabilityPolicy.RELIABLE,
             durability=DurabilityPolicy.VOLATILE,
@@ -36,27 +36,23 @@ class MoverHaciaDelante(Node):
         self.timer = self.create_timer(0.05, self.enviar_fuerza_avance)
 
     def enviar_fuerza_avance(self):
-        # FUERZA: Ajusta este valor. 
-        # Positivo suele ser empujar. Si va marcha atrás, ponlo negativo (-80.0)
         msg_pos = Float64()
         msg_pos.data = 120.0
         
         msg_neg = Float64()
         msg_neg.data = 0.0  # Fuerza inversa
         
-        fuerza_vertical =100.0  # Ponemos 300N para vencer la flotabilidad
+        fuerza_vertical =100.0  
         
         msg_vertical = Float64()
         msg_vertical.data = fuerza_vertical
         # --- MOTORES HORIZONTALES (1, 2, 3, 4) ---
-        # Para ir recto hacia adelante, activamos los 4 en configuración vectorial
         self.pubs[0].publish(msg_pos) # Motor 1
         self.pubs[1].publish(msg_neg) # Motor 2
         self.pubs[2].publish(msg_neg) # Motor 3
         self.pubs[3].publish(msg_pos) # Motor 4
 
         # --- MOTORES VERTICALES (5, 6) ---
-        # Los dejamos a 0 (o quietos) para que no suba ni baje
         msg_stop = Float64()
         msg_stop.data = 0.0
         self.pubs[4].publish(msg_vertical)

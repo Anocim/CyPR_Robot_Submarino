@@ -11,7 +11,6 @@ class ControladorSubmarino(Node):
     def __init__(self):
         super().__init__('controlador_submarino')
 
-	# Configuración QoS para Sensores (BEST_EFFORT para coincidir con Gazebo/Puente)
         qos_profile = QoSProfile(
            reliability=ReliabilityPolicy.RELIABLE,
            durability=DurabilityPolicy.VOLATILE,
@@ -25,7 +24,6 @@ class ControladorSubmarino(Node):
         self.yaw = 0.0
 
         # Suscribirse a la Odometría
-        # OJO: Asegúrate de que el topic coincide con el de tu puente
         self.sub_odom = self.create_subscription(
             Odometry,
             '/model/orca4/odometry', 
@@ -58,8 +56,6 @@ class ControladorSubmarino(Node):
         self.pitch = pitch
         self.yaw = yaw
         
-        # --- ESTA ES LA LÍNEA QUE IMPRIME EN PANTALLA ---
-        # Convertimos a grados para que sea más fácil de leer
         roll_deg = math.degrees(roll)
         pitch_deg = math.degrees(pitch)
         yaw_deg = math.degrees(yaw)
@@ -67,7 +63,6 @@ class ControladorSubmarino(Node):
         self.get_logger().info(f'Profund: {profundidad_real:.2f} | Roll: {roll_deg:.2f}° | Pitch: {pitch_deg:.2f}° | Yaw: {yaw_deg:.2f}°')
     	
     def altimeter_callback(self, msg):
-    	# La distancia es el primer elemento (porque solo hay 1 rayo)
     	distancia_fondo = msg.ranges[0]
     
     	# Filtrar infinitos (si no ve fondo)

@@ -29,7 +29,7 @@ class AUVController(Node):
         )
 
         # --- PARÁMETROS FÍSICOS (DINÁMICA) ---
-        # Masa e Inercias (incluye inercia de masa añadida si el modelo fuera completo)
+        # Masa e Inercias 
         self.m = 10.0
         self.Ixx = 0.09873097998042396
         self.Iyy = 0.17756847998042397
@@ -84,8 +84,7 @@ class AUVController(Node):
             self.Kp[i] = M_ii[i] * (self.wn ** 2)
             self.Kd[i] = M_ii[i] * 2.0 * self.zeta * self.wn
             
-        # El eje 2 (Heave/Profundidad) es control de POSICIÓN (no velocidad), Kp y Ki dominan. 
-        # Lo ajustamos manualmente (o con un diseño específico de 3er orden)
+        # El eje 2 (Heave/Profundidad) es control de POSICIÓN (no velocidad), Kp y Ki dominan
         
         self.Kp[0]=self.Kp[4]/2
         self.Kp[1]=self.Kp[4]/2
@@ -100,8 +99,7 @@ class AUVController(Node):
         self.Kd[4]=self.Kd[4]*2
         self.Kd[5]=0.5
 
-        # Ganancias Integrales (Ki): Necesitan ser ajustadas empíricamente 
-        # ya que compensan errores de estado estacionario y flotabilidad no compensados.
+        # Ganancias Integrales (Ki)
         
         self.Ki = np.array([0., 0., 0.0, 0.0, 0.0, 0.0]) 
         
@@ -152,17 +150,13 @@ class AUVController(Node):
 
 
     # --------------------------------------------------
-    # --- FUNCIONES DINÁMICAS (sin cambios) ---
+    # --- FUNCIONES DINÁMICAS---
     # --------------------------------------------------
 
     def depth_target_callback(self, msg):
         self.target_depth = msg.data
-        # Aseguramos que la referencia de velocidad vertical (heave) sea 0 para que el 
-        # controlador de posición/profundidad (tau_P, tau_I) tome el control.
 
-    # NUEVA FUNCIÓN: Manejar la referencia de Orientación (Roll, Pitch, Yaw)
     def orientation_target_callback(self, msg):
-        # Los campos angular.x, .y, .z se usan para mandar los ángulos de Euler deseados
         roll_d = msg.angular.x
         pitch_d = msg.angular.y
         yaw_d = msg.angular.z
@@ -173,8 +167,6 @@ class AUVController(Node):
         # q_d es (x, y, z, w). Actualizar el setpoint de cuaternión.
         self.q_desired = np.array(q_d)
 
-        # Opcional: Si necesitas el control del Yaw con velocidad angular:
-        # self.target_vel[5] = msg.angular.z
         
     def cmd_callback(self, msg):
         self.target_vel[0] = msg.linear.x
@@ -247,7 +239,7 @@ class AUVController(Node):
 
 
     # --------------------------------------------------
-    # --- BUCLE PRINCIPAL (sin cambios en la lógica PID/FF) ---
+    # --- BUCLE PRINCIPAL ---
     # --------------------------------------------------
 
     def control_loop(self):
@@ -261,7 +253,6 @@ class AUVController(Node):
         q_current_inv = quaternion_inverse(self.q_current)
         q_error = quaternion_multiply(self.q_desired, q_current_inv)
         
-        # c) Extraer el vector de error (e) de la parte imaginaria, con signo de la parte real (w_e)
         w_e = q_error[3]  # Componente w (real)
         x_y_z_e = np.array(q_error[0:3]) # Componentes x, y, z (vectoriales)
         

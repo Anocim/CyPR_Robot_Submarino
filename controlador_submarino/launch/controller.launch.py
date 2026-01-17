@@ -29,7 +29,7 @@ def generate_launch_description():
     # "executable" debe coincidir con el nombre que pusiste en setup.py (entry_points)
     controlador = Node(
         package='controlador_submarino',
-        executable='control_sdre', 
+        executable='control_sdre_perturbaciones', 
         name='controlador_pid_dinamico',
         output='screen'
     )

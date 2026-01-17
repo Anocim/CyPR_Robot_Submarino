@@ -41,8 +41,10 @@ setup(
             'control_din_PID_odom_cambio=controlador_submarino.control_din_PID_odom_cambio:main',
             'cambio_ref=controlador_submarino.cambio_ref:main',
             'control_sdre=controlador_submarino.control_sdre:main',
+            'control_sdre_perturbaciones=controlador_submarino.control_sdre_perturbaciones:main',
             'cambio_pos=controlador_submarino.cambio_pos:main',
             'control_punto_punto=controlador_submarino.control_punto_punto:main',
+            'corriente_submarinas=controlador_submarino.corriente_submarinas:main',
         ],
     },
 )

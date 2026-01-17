@@ -25,12 +25,11 @@ class AUVController(Node):
         self.T_inv = np.linalg.pinv(self.T)
 
         # --- PARÁMETROS DEL CONTROLADOR PID ---
-        # Frecuencia del loop de control (20 Hz)
         self.dt = 0.05 
         
         # Ganancias Proporcionales (P)
         self.Kp = np.array([20, 20, 40, 10, 10, 15])
-        # Ganancias Integrales (I) - Valores iniciales sugeridos, ¡deben ser ajustados!
+        # Ganancias Integrales (I) 
         self.Ki = np.array([0.5, 0.5, 5.0, 0.1, 0.1, 0.5])
         # Ganancias Derivativas (D)
         self.Kd = np.array([5, 5, 10, 2, 2, 3])
@@ -44,7 +43,7 @@ class AUVController(Node):
         
         # Vector para almacenar el error acumulado
         self.error_integral = np.zeros(6)
-        # Vector para almacenar el error en la última iteración (para saturación anti-windup)
+        # Vector para almacenar el error en la última iteración
         self.last_error = np.zeros(6)
 
 
@@ -52,7 +51,7 @@ class AUVController(Node):
         self.create_subscription(Twist, '/cmd_vel', self.cmd_callback, 10)
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
 
-        # --- PUBLISHERS (IGUAL QUE EL MAPEO) ---
+        # --- PUBLISHERS ---
         self.thruster_topics = [
             '/model/orca4/joint/thruster1_joint/cmd_thrust',
             '/model/orca4/joint/thruster2_joint/cmd_thrust',
@@ -107,15 +106,11 @@ class AUVController(Node):
         # Acumulación: I = I_anterior + error * dt
         self.error_integral += error * self.dt
         
-        # Opcional: Saturación Anti-Windup (Para evitar que la integral crezca demasiado)
-        # Simplemente limitar el valor máximo de la integral
-        # Límite I (ejemplo: 10)
         I_limit = 10.0
         self.error_integral = np.clip(self.error_integral, -I_limit, I_limit)
 
 
         # 3. CÁLCULO DEL ERROR D (Derivativo)
-        # Usamos la velocidad actual, asumiendo que la derivada del error es -velocidad.
         # tau_D = - Kd * state_vel
 
         # 4. CÁLCULO DEL TORQUE TOTAL (PID)
@@ -136,7 +131,6 @@ class AUVController(Node):
             msg.data = float(motor_forces[i])
             self.thruster_pubs[i].publish(msg)
 
-        # Guardar el error para la próxima iteración (si se usara un cálculo D más complejo)
         self.last_error = error
 
 
